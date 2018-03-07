@@ -1,0 +1,70 @@
+{#
+# Portfolio entry template
+# -------------------
+#
+# This template gets loaded whenever a News entry’s URL is
+# requested. That’s because the News section’s Template setting is
+# set to “news/_entry”, the path to this template.
+#
+# When this template is loaded, it will already have an ‘entry’
+# variable, set to the requested News entry.
+#
+# See this page for more details on how Craft routes requests:
+# http://craftcms.com/docs/routing
+#}
+
+{% extends "_layout" %}
+
+{% block content %}
+<article class="portfolio">
+    {% for category in entry.portfolioType %}
+    {% if entry.portfolioAnimationYoutubeVideo | length %}
+    <div class="portfolio-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ entry.portfolioAnimationYoutubeVideo}}"
+                rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    {% else %}
+    <div class="portfolio-video">
+        {% for image in entry.portfolioImage %}
+        <img src="{{ image.url }}">
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="portfolio-text">
+                    <div class="header-portfolio">
+                    <h2>{{entry.title}}</h2>
+                    </div>
+                    <p class="small-text-portfolio">{{ entry.portfolioSummary }}</p>
+                    <p class="large-text-portfolio">{{ entry.body}}</p>
+
+                    {% for tag in entry.tags %}
+                    <div class="button-tag"><i class="fa fa-tags" aria-hidden="true"></i><p>{{ tag.title }}</p></div>
+                    {% endfor %}
+
+                    <div class="butt-resume">
+                        <a  target="_blank" href="{{ entry.portfolioUrl }}">Watch online!</a>
+                    </div>
+                </div>
+            </div>
+
+            {% if entry.portfolioImage | length %}
+            <div class="col-md-6">
+                <div class="portfolio-image">
+                    {% for image in entry.portfolioImage %}
+                    <img class="portfolioImage" src="{{ image.url }}">
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+</article>
+{% endblock %}

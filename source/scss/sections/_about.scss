@@ -1,0 +1,158 @@
+.person-name, .person-nationality, .person-phone, .person-dob,.person-address ,.person-email {
+  display: table-row;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+}
+
+
+.person-name p, .person-nationality p, .person-phone p, .person-dob p,.person-address p,.person-email p{
+  display: inline-block;
+  min-width: 100px;
+  color: black;
+  font-weight:700;
+}
+
+.person-name span, .person-nationality span, .person-phone span, .person-dob span,.person-address span,.person-email span{
+  display: inline-block;
+  min-width: 100px;
+  color: grey;
+}
+
+.no-padding{
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .person-name p, .person-nationality p, .person-phone p, .person-dob p,.person-address p,.person-email p{
+    display: table-cell;
+    min-width: 90px;
+    color: black;
+    font-weight:700;
+  }
+}
+
+.about-content .person-img img {
+  padding: 25px;
+  filter: grayscale(50%);
+  width: 100%;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.about-content .person-img img:hover {
+  padding: 15px;
+  filter: grayscale(0%);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.about-content .social-links {
+  margin-top: 30px
+}
+
+.copyright {
+  text-align: center;
+}
+
+.about-content .person-info h3 {
+  margin-top: 0;
+  position: relative;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase
+}
+
+
+
+.about-content .person-info .text-info {
+  margin: 20px 0 25px;
+  color: black !important;
+  font-size: 15px;
+  line-height: 26px
+}
+
+.about-content .languages h4, .person-info .about_info h4 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase
+}
+
+.about_info{
+  p{
+    margin-top: 25px;
+  }
+}
+
+.person-info .about_info ul {
+  list-style: none;
+  padding-left: 0
+}
+
+.person-info .about_info ul li {
+  color: grey
+}
+
+.person-info .about_info ul li p {
+  display: inline-block;
+  width: 80px;
+  font-size: 15px;
+  margin-right: 20px;
+  color: #000;
+  font-weight: 700
+}
+
+.person-info .about_info ul li span {
+  font-size: 16px
+}
+
+.person-info .butt-resume {
+  margin-top: 15px
+}
+
+.person-info .butt-resume a {
+  text-decoration: none;
+  color: $white;
+  background-color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+
+.person-info .butt-resume a:hover {
+  border: 1px solid #333;
+  background-color: transparent;
+  color: #333
+}
+
+
+.languages .single-lang .prog i {
+  margin-right: 5px
+}
+
+.languages .single-lang .lang-title h5 {
+  font-size: 15px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Quicksand, sans-serif;
+  margin-bottom: 5px
+}
+
+.languages .single-lang {
+  margin-bottom: 25px
+}
+
+.languages .single-lang .fa-star-o {
+  color: grey
+}

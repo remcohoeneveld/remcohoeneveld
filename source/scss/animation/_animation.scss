@@ -1,0 +1,83 @@
+#loading-mask {
+  background: #f6f6f6;
+  height: 100%;
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 999999999
+}
+
+.spinner {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  font-size: 10px;
+  margin: -22px 0 0 -22px;
+  top: 50%;
+  left: 50%
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  -moz-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  -o-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  -moz-animation-delay: -1.1s;
+  -o-animation-delay: -1.1s;
+  animation-delay: -1.1s
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  -moz-animation-delay: -1s;
+  -o-animation-delay: -1s;
+  animation-delay: -1s
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -.9s;
+  -moz-animation-delay: -.9s;
+  -o-animation-delay: -.9s;
+  animation-delay: -.9s
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -.8s;
+  -moz-animation-delay: -.8s;
+  -o-animation-delay: -.8s;
+  animation-delay: -.8s
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 100%, 40% {
+    -webkit-transform: scaleY(.4)
+  }
+  20% {
+    -webkit-transform: scaleY(1)
+  }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 100%, 40% {
+    transform: scaleY(.4);
+    -webkit-transform: scaleY(.4)
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1)
+  }
+}

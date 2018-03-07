@@ -1,0 +1,16 @@
+.navbar-toggler-icon{
+  color: $white;
+}
+
+.bg-dark {
+  background-color: $black !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  &:hover{
+    text-decoration: none;
+    color: $grey-light;
+  }
+}

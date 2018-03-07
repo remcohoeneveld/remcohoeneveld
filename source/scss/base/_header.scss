@@ -1,0 +1,41 @@
+.header {
+  background-color: $dark-grey;
+  color: white;
+  .main {
+    h1{
+      position: absolute;
+      top: 185px;
+      text-align: center;
+      width: 100%;
+      background: black;
+      padding: 20px;
+      font-size: 80px;
+    }
+    video {
+      width: 100%;
+      object-fit: fill;
+      min-height: 600px;
+      max-height: 600px;
+    }
+    .bg{
+      width: 100%;
+      background-color: transparent;
+      min-height: 600px;
+      max-height: 600px;
+    }
+    h3 {
+      background: rgba(105, 105, 105, 0.6);
+      padding: 20px;
+      position: absolute;
+      width: 100%;
+      top: 321px;
+      font-size: 39px;
+      .typewrite {
+        color: black;
+        .wrap {
+          border-right: 0.1em solid black
+        }
+      }
+    }
+  }
+}

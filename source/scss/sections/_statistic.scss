@@ -1,0 +1,72 @@
+
+#statistic {
+  background-color: #f6f6f6
+}
+
+#statistic h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  color: #333;
+  padding: 7px 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+  margin-top: 0;
+  z-index: 1
+}
+
+#statistic h4:before {
+  content: '';
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 5px;
+  background-color: #f6f6f6;
+  margin: auto;
+  top: 53px
+}
+
+#statistic h4:after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 31px;
+  height: 1px;
+  transform: rotate(90deg);
+  background-color: #ddd;
+  margin: auto;
+  top: 26px
+}
+
+#statistic .statistic-block {
+  border: 1px solid #ddd;
+  display: table;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  width: 180px;
+  height: 160px
+}
+
+#statistic .statistic-block h2 {
+  font: 700 3.5em/1em Montserrat, sans-serif;
+  margin-top: 0;
+  padding: 28px 0 15px;
+  margin-bottom: 0;
+  line-height: 60px
+}
+
+#statistic .statistic-block p {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font: 400 12px/25px Quicksand, sans-serif
+}
+
+#statistic .rate-statis .statistic-block .coin {
+  position: absolute;
+  font-size: 25px;
+  left: 28px;
+  top: 30px
+}
