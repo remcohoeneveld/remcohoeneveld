@@ -1,13 +1,12 @@
 <html>
 <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
     <link rel="home" href="{{ siteUrl }}"/>
     <!--Import Google Icon Font-->
-
     {# Tell the browser to cache this page for 30 days #}
     {% set expiry = now|date_modify('+30 days') %}
-    <link rel="home" href="{{ siteUrl }}"/>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -33,10 +32,11 @@
     </script>
 </head>
 <body>
-<div class="wrapper">
+<div id="wrapper">
     <div id="header-banner">
         <div class="header section">
             <div class="main text-center">
+                {% if craft.request.getFirstSegment() == '' %}
                 <h1>Remco Hoeneveld</h1>
                 <h3>
                     A freelance
@@ -45,10 +45,13 @@
                                 <span class="wrap"></span>
                             </span>
                 </h3>
-                {% if craft.request.getFirstSegment() == '' %}
                 <video loop muted autoplay playsinline id="video"></video>
                 {% else %}
-                <div class="bg"></div>
+                <div class="bg">
+                    <h2>
+                        Remco Hoeneveld
+                    </h2>
+                </div>
                 {% endif %}
             </div>
         </div>
@@ -63,11 +66,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="{{siteUrl}}">Home <span
-                            class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ siteUrl}}#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ siteUrl}}#portfolio">Portfolio</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="{{siteUrl}}">Home <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ siteUrl}}#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ siteUrl}}#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ siteUrl}}#skills">Skills</a></li>
                 </ul>
             </div>
         </div>
@@ -80,42 +82,45 @@
 
 
     <div class="push"></div>
-</div>
 
 
-<footer class="page-footer footer">
-    <div class="container">
-        <div class="row">
-            <div class="contact col-md-6">
-                <h5>Contact info</h5>
-                <div class="contact-info wow animated fadeInRight animated" data-wow-delay=".6s"
-                     style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
-                    <p><i class="fa fa-home"></i> 20B, Lumeystraat, Rotterdam, Nederland</p>
+    <footer class="page-footer footer">
+        <div class="container">
+            <div class="row">
+                <div class="contact col-md-6">
+                    <h5>Contact info</h5>
+                    <div class="contact-info wow animated fadeInRight animated" data-wow-delay=".6s"
+                         style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+                        <p><i class="fa fa-home"></i> 20B, Lumeystraat, Rotterdam, Nederland</p>
 
-                    <p><i class="fa fa-home"></i> +316 41185118</p>
+                        <p><i class="fa fa-home"></i> +316 41185118</p>
+                    </div>
+                </div>
+                <div class="social col-md-6">
+                    <h5>Social Media</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/rhoeneveld"><i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook</a>
+                        </li>
+                        <li><a href="https://twitter.com/RemcoHoeneveld"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
+                        </li>
+                        <li><a href="https://plus.google.com/+RemcohoeneveldNl/about"><i class="fab fa-google-plus-g"></i> LinkedIn</a>
+                        </li>
+                        <li><a href="https://nl.linkedin.com/pub/remco-hoeneveld/a1/127/141"><i class="fab fa-linkedin" aria-hidden="true"></i> Soundcloud</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="social col-md-6">
-                <h5>Social Media</h5>
-                <ul>
-                    <li><a href="https://www.facebook.com/rhoeneveld">Facebook</a>
-                    </li>
-                    <li><a href="https://twitter.com/RemcoHoeneveld">Twitter</a>
-                    </li>
-                    <li><a href="https://plus.google.com/+RemcohoeneveldNl/about">LinkedIn</a>
-                    </li>
-                    <li><a href="https://nl.linkedin.com/pub/remco-hoeneveld/a1/127/141">Soundcloud</a></li>
-                </ul>
-            </div>
         </div>
+        <div class="footer-copyright">
+            <footer id="footer" class="main-footer text-center">
+                Copyright {{ now.year }} {{ craft.request.serverName | ucfirst }}. All rights reserved
+            </footer>
+        </div>
+    </footer>
+</div>
+<div id="preloader">
+    <div id="loader">
     </div>
-    <div class="footer-copyright">
-        <footer id="footer" class="main-footer text-center">
-            Copyright {{ now.year }} {{ craft.request.serverName | ucfirst }}. All rights reserved
-        </footer>
-    </div>
-</footer>
-
+</div>
 <!-- Bootstrap core JavaScript
         ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -136,12 +141,13 @@
         crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-<script type="text/javascript" src="{{ siteUrl}}/assets/js/photofiltering.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}/assets/js/typewriter.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}/assets/js/wow.min.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}/assets/js/thanks.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}/assets/js/custom.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}/assets/js/youtube.js"></script>
+<script type="text/javascript" src="{{ siteUrl}}assets/js/photofiltering.js"></script>
+<script type="text/javascript" src="{{ siteUrl}}assets/js/typewriter.js"></script>
+<script type="text/javascript" src="{{ siteUrl}}assets/js/wow.min.js"></script>
+<script type="text/javascript" src="{{ siteUrl}}assets/js/thanks.js"></script>
+<script type="text/javascript" src="{{ siteUrl}}assets/js/custom.js"></script>
+<script type="text/javascript" src="{{ siteUrl}}assets/js/youtube.js"></script>
+<script type="text/javascript" src="{{ siteUrl}}assets/js/main.js"></script>
 <script>
     var scroll = new SmoothScroll('a[href*="#"]', {
         // Selectors

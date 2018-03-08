@@ -1,39 +1,41 @@
 #hire {
   height: 200px;
-}
+  .hire {
+    padding: 30px;
+    .hire-content {
+      h3 {
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 25px;
+        margin-bottom: 20px
+      }
+      p {
+        color: $white;
+        font-size: 1rem;
+      }
+    }
+    .hire-butt {
+      display: inline-block;
+      margin-top: 10px;
+      &:hover {
+        background-color: black;
+        border-color: black
 
-#hire .hire {
-  padding: 15px 0 90px;
-}
+      }
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 16px;
+        border: 1px solid $white;
+        padding: 10px 20px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out
+      }
 
-#hire .hire-content h3 {
-  color: $white;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 25px;
-  margin-bottom: 20px
-}
-
-#hire .hire-content p {
-  color: $white;
-  font-size: 2rem;
-  margin-bottom: 20px
-}
-
-#hire .hire-butt a {
-  text-decoration: none;
-  color: $white;
-  font-size: 16px;
-  border: 1px solid $white;
-  padding: 10px 20px;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out
-}
-
-#hire .hire-butt a:hover {
-  background-color: #333;
-  border-color: #333
+    }
+  }
 }
