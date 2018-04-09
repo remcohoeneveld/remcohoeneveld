@@ -82,14 +82,8 @@ $font-size: 25px;
     i {
       transition: transform 0.4s linear 0s;
     }
-
     &:hover {
-      transform: rotate(360deg);
       border-radius: 50%;
-
-      i {
-        transform: rotate(-360deg);
-      }
     }
   }
 }

@@ -1,6 +1,6 @@
 .footer{
   padding-top: 50px;
-  background-color: $grey-light;
+  background-color: $light-grey;
   margin-top: 50px;
   .container{
     margin-bottom: 50px;
@@ -16,6 +16,12 @@
           text-decoration: none;
           &:hover{
             color: grey;
+          }
+          span{
+            width: 20px;
+            display: inline-block;
+            margin-right: 10px;
+            color: darkgray;
           }
         }
       }

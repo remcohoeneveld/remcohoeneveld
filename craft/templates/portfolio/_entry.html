@@ -12,6 +12,7 @@
 # See this page for more details on how Craft routes requests:
 # http://craftcms.com/docs/routing
 #}
+{% set title = entry.title %}
 
 {% extends "_layout" %}
 
@@ -35,7 +36,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="portfolio-text">
                     <div class="header-portfolio">
                     <h2>{{entry.title}}</h2>
@@ -54,7 +55,7 @@
             </div>
 
             {% if entry.portfolioImage | length %}
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="portfolio-image">
                     {% for image in entry.portfolioImage %}
                     <img class="portfolioImage" src="{{ image.url }}">

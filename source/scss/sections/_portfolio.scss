@@ -1,4 +1,13 @@
 .portfolio-text {
+  p{
+    a{
+      color: $dark-blue;
+      text-decoration: none;
+      &:hover{
+        color: $dark-grey;
+      }
+    }
+  }
   .butt-resume {
     a {
       text-align: left;
@@ -61,20 +70,20 @@
     color: black;
   }
 
-  h2 {
-    font-weight: bold;
+  h1 {
     padding-left: 10px;
     font-size: 2em;
-    width: 75%;
-    color: black;
+    color: white;
     text-transform: lowercase;
     display: inline-block;
     margin: 0;
-    margin-top: 20px;
-    vertical-align: top;
+    vertical-align: unset;
+    font-weight: 200;
   }
 
   .header-portfolio {
+    background: $dark-blue;
+    color: white;
     &:before {
       color: white;
       display: inline-block;
@@ -83,6 +92,18 @@
       text-align: center;
       content: "Project: ";
       padding: 15px;
+    }
+    h2{
+      display: inline-block;
+      margin-left: 10px;
+      padding-top: 10px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .header-portfolio {
+      &:before {
+        width: 100%;
+      }
     }
   }
 

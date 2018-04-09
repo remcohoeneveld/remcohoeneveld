@@ -2,7 +2,28 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+
+    {% hook 'seomaticRender' %}
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ siteUrl }}/uploads/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ siteUrl }}/uploads/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ siteUrl }}/uploads/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ siteUrl }}/uploads/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ siteUrl }}/uploads/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ siteUrl }}/uploads/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ siteUrl }}/uploads/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ siteUrl }}/uploads/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ siteUrl }}/uploads/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ siteUrl }}/uploads/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ siteUrl }}/uploads/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ siteUrl }}/uploads/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ siteUrl }}/uploads/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{ siteUrl }}/uploads/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ siteUrl }}/uploads/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>{{ siteName }}{% if title is defined %} - {{ title }}{% endif %}</title>
     <link rel="home" href="{{ siteUrl }}"/>
     <!--Import Google Icon Font-->
     {# Tell the browser to cache this page for 30 days #}
@@ -16,6 +37,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     {% includeCssFile "/assets/styles/style.css" %}
+
+    {% includeCssFile "/assets/styles/animate.css" %}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55112337-1"></script>
@@ -37,7 +60,7 @@
         <div class="header section">
             <div class="main text-center">
                 {% if craft.request.getFirstSegment() == '' %}
-                <h1>Remco Hoeneveld</h1>
+                <h1>{{ siteName }}</h1>
                 <h3>
                     A freelance
                     <span class="typewrite" data-period="2000"
@@ -45,13 +68,9 @@
                                 <span class="wrap"></span>
                             </span>
                 </h3>
+                <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+                <div class="background-video"></div>
                 <video loop muted autoplay playsinline id="video"></video>
-                {% else %}
-                <div class="bg">
-                    <h2>
-                        Remco Hoeneveld
-                    </h2>
-                </div>
                 {% endif %}
             </div>
         </div>
@@ -59,6 +78,9 @@
 
     <nav class="navbar navbar-expand-md bg-dark">
         <div class="container">
+            <a href="{{siteUrl}}">
+                <span class="nav-title">{{ siteName }}</span>
+            </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -66,7 +88,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="{{siteUrl}}">Home <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ siteUrl}}#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ siteUrl}}#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ siteUrl}}#skills">Skills</a></li>
@@ -89,7 +110,7 @@
             <div class="row">
                 <div class="contact col-md-6">
                     <h5>Contact info</h5>
-                    <div class="contact-info wow animated fadeInRight animated" data-wow-delay=".6s"
+                    <div class="contact-info"
                          style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
                         <p><i class="fa fa-home"></i> 20B, Lumeystraat, Rotterdam, Nederland</p>
 
@@ -99,13 +120,17 @@
                 <div class="social col-md-6">
                     <h5>Social Media</h5>
                     <ul>
-                        <li><a href="https://www.facebook.com/rhoeneveld"><i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook</a>
+                        <li><a href="https://www.facebook.com/rhoeneveld">
+                            <span><i class="fab fa-facebook-f" aria-hidden="true"></i></span>Facebook</a>
                         </li>
-                        <li><a href="https://twitter.com/RemcoHoeneveld"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
+                        <li><a href="https://twitter.com/RemcoHoeneveld">
+                            <span><i class="fab fa-twitter" aria-hidden="true"></i></span>Twitter</a>
                         </li>
-                        <li><a href="https://plus.google.com/+RemcohoeneveldNl/about"><i class="fab fa-google-plus-g"></i> LinkedIn</a>
+                        <li><a href="https://plus.google.com/+RemcohoeneveldNl/about">
+                            <span><i class="fab fa-google-plus-g"></i></span>Google+</a>
                         </li>
-                        <li><a href="https://nl.linkedin.com/pub/remco-hoeneveld/a1/127/141"><i class="fab fa-linkedin" aria-hidden="true"></i> Soundcloud</a></li>
+                        <li><a href="https://nl.linkedin.com/pub/remco-hoeneveld/a1/127/141">
+                            <span><i class="fab fa-linkedin" aria-hidden="true"></i></span>LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
@@ -121,61 +146,57 @@
     <div id="loader">
     </div>
 </div>
-<!-- Bootstrap core JavaScript
-        ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script
-        src="https://code.jquery.com/jquery-2.2.4.js"
-        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.6/jquery.appear.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<div class="scripts">
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.6/jquery.appear.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script type="text/javascript" src="{{ siteUrl}}assets/js/scripts.min.js"></script>
+    <script type="text/javascript" src="{{ siteUrl}}assets/js/scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            // Selectors
+            ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+            header: null, // Selector for fixed headers (must be a valid CSS selector)
 
-<script type="text/javascript" src="{{ siteUrl}}assets/js/photofiltering.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}assets/js/typewriter.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}assets/js/wow.min.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}assets/js/thanks.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}assets/js/custom.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}assets/js/youtube.js"></script>
-<script type="text/javascript" src="{{ siteUrl}}assets/js/main.js"></script>
-<script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
-        // Selectors
-        ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
-        header: null, // Selector for fixed headers (must be a valid CSS selector)
+            // Speed & Easing
+            speed: 500, // Integer. How fast to complete the scroll in milliseconds
+            offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+            easing: 'easeInOutCubic', // Easing pattern to use
+            customEasing: function (time) {
 
-        // Speed & Easing
-        speed: 500, // Integer. How fast to complete the scroll in milliseconds
-        offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-        easing: 'easeInOutCubic', // Easing pattern to use
-        customEasing: function (time) {
+                // Function. Custom easing pattern
+                // If this is set to anything other than null, will override the easing option above
 
-            // Function. Custom easing pattern
-            // If this is set to anything other than null, will override the easing option above
+                // return <your formulate with time as a multiplier>
 
-            // return <your formulate with time as a multiplier>
+                // Example: easeInOut Quad
+                return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
 
-            // Example: easeInOut Quad
-            return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+            },
 
-        },
-
-        // Callback API
-        before: function (anchor, toggle) {
-        }, // Callback to run before scroll
-        after: function (anchor, toggle) {
-        } // Callback to run after scroll
-    });
-</script>
+            // Callback API
+            before: function (anchor, toggle) {
+            }, // Callback to run before scroll
+            after: function (anchor, toggle) {
+            } // Callback to run after scroll
+        });
+    </script>
+</div>
 </body>
 </html>

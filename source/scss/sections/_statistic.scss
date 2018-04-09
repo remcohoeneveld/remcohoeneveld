@@ -1,6 +1,6 @@
 
 #statistic {
-  background-color: #f6f6f6
+  background-color: $light-grey
 }
 
 #statistic h4 {
@@ -23,7 +23,7 @@
   display: block;
   width: 24px;
   height: 5px;
-  background-color: #f6f6f6;
+  background-color: $light-grey;
   margin: auto;
   top: 53px
 }
@@ -35,13 +35,13 @@
   width: 31px;
   height: 1px;
   transform: rotate(90deg);
-  background-color: #ddd;
+  background-color: $light-grey;
   margin: auto;
   top: 26px
 }
 
 #statistic .statistic-block {
-  border: 1px solid #ddd;
+  border: 1px solid $light-grey;
   display: table;
   text-align: center;
   position: relative;

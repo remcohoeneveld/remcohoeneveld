@@ -1,25 +1,26 @@
 .header {
   color: white;
-  background: $grey-light;
+  background: $light-grey;
   .main {
     h1 {
       position: absolute;
       top: 275px;
       text-align: center;
       width: 100%;
-      background: $orange;
       padding: 20px;
-      font-size: 80px;
+      font-size: 90px;
+      z-index: 2;
     }
     h3 {
-      background: rgba(105, 105, 105, 0.6);
       padding: 20px;
       position: absolute;
       width: 100%;
       top: 410px;
-      font-size: 39px;
+      font-size: 60px;
+      z-index: 2;
       .typewrite {
         color: black;
+        font-weight: bold;
         .wrap {
           border-right: 0.1em solid black
         }
@@ -28,12 +29,50 @@
     video {
       width: 100%;
       object-fit: fill;
-      min-height: 800px;
-      max-height: 800px;
+      min-height: 1000px;
+      max-height: 1000px;
       background: black;
     }
-
+    .background-video{
+      background-color: $dark-blue;
+      width: 100%;
+      height: 1000px;
+      opacity: 0.5;
+      position: absolute;
+    }
+    @media screen and (max-width: 870px) {
+      h1 {
+        font-size: 70px;
+      }
+      h3 {
+        font-size: 40px;
+      }
+      .background-video{
+        opacity: 0.6;
+      }
+    }
     @media screen and (max-width: 774px) {
+      h1 {
+        top: 235px;
+        width: 100%;
+        font-size: 60px;
+      }
+      h3 {
+        font-size: 40px;
+        top: 320px;
+      }
+      video {
+        width: 100%;
+        object-fit: fill;
+        min-height: 600px;
+        max-height: 600px;
+      }
+      .background-video{
+        height: 600px;
+        opacity: 0.5;
+      }
+    }
+    @media screen and (max-width: 593px) {
       h1 {
         top: 235px;
         width: 100%;
@@ -49,6 +88,10 @@
         min-height: 600px;
         max-height: 600px;
       }
+      .background-video{
+        height: 600px;
+        opacity: 0.4;
+      }
     }
     .bg {
       width: 100%;
@@ -56,13 +99,17 @@
       min-height: 0;
       max-height: none;
       color: black;
-      h2{
+      h1{
         text-align: center;
         width: 100%;
-        background: $grey-light;
+        background: $dark-blue;
+        color: $white;
         padding: 60px;
         font-size: 39px;
         margin: 0;
+        span{
+          font-weight: 200;
+        }
       }
       h4{
         background: rgba(105, 105, 105, 0.6);

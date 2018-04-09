@@ -117,7 +117,7 @@ if (!defined('HL_NUMBERS_UL')) {
  *       'brackets'   => 'color: blue',
  *       'builtin'    => 'color: red',
  *       'code'       => 'color: green',
- *       'comment'    => 'color: orange',
+ *       'comment'    => 'color: dark-blue',
  *       // ....
  * );
  *

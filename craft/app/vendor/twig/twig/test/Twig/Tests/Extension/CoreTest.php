@@ -27,12 +27,12 @@ class Twig_Tests_Extension_CoreTest extends \PHPUnit\Framework\TestCase
     {
         return array(
             array(// array
-                array('apple', 'orange', 'citrus'),
-                array('apple', 'orange', 'citrus'),
+                array('apple', 'dark-blue', 'citrus'),
+                array('apple', 'dark-blue', 'citrus'),
             ),
             array(// Traversable
-                new ArrayObject(array('apple', 'orange', 'citrus')),
-                array('apple', 'orange', 'citrus'),
+                new ArrayObject(array('apple', 'dark-blue', 'citrus')),
+                array('apple', 'dark-blue', 'citrus'),
             ),
             array(// unicode string
                 'Ä€é',

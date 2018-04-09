@@ -612,11 +612,11 @@ function _twig_markup2string(&$value)
  * Merges an array with another one.
  *
  * <pre>
- *  {% set items = { 'apple': 'fruit', 'orange': 'fruit' } %}
+ *  {% set items = { 'apple': 'fruit', 'dark-blue': 'fruit' } %}
  *
  *  {% set items = items|merge({ 'peugeot': 'car' }) %}
  *
- *  {# items now contains { 'apple': 'fruit', 'orange': 'fruit', 'peugeot': 'car' } #}
+ *  {# items now contains { 'apple': 'fruit', 'dark-blue': 'fruit', 'peugeot': 'car' } #}
  * </pre>
  *
  * @param array|Traversable $arr1 An array
