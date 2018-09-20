@@ -34,12 +34,12 @@
                         </div>
 
                         <div class="person-intro">
-                            <h2 class="text-center">{{ entry.personIntro }}</h2>
+                            <p class="text-center">{{ entry.personIntro }}</p>
                         </div>
 
                         <div class="row about-skills">
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6">
 
                                 {% set image = entry.aboutImage.first() %}
                                 {% if image %}
@@ -387,26 +387,26 @@
     </div><!-- End Container -->
 </section>
 
-{# Hire me section of this page #}
-{% for entry in craft.entries.section('hireMe').find() %}
-<section id="hire">
-    <div class="overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center hire">
-                    <div class="hire-content">
-                        <h3>{{ entry.headText }}</h3>
-                        <p>{{ entry.paragraphText }}</p>
-                    </div>
-                    <div class="hire-butt">
-                        <a class="hire-me" href="#contact">{{ entry.contactText }}</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-{% endfor %}
+<!--{# Hire me section of this page #}-->
+<!--{% for entry in craft.entries.section('hireMe').find() %}-->
+<!--<section id="hire">-->
+    <!--<div class="overlay">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12 text-center hire">-->
+                    <!--<div class="hire-content">-->
+                        <!--<h3>{{ entry.headText }}</h3>-->
+                        <!--<p>{{ entry.paragraphText }}</p>-->
+                    <!--</div>-->
+                    <!--<div class="hire-butt">-->
+                        <!--<a class="hire-me" href="{{ siteUrl}}#contact">{{ entry.contactText }}</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<!--{% endfor %}-->
 
 {# Contact section of this page #}
 {% for entry in craft.entries.section('contact').find() %}

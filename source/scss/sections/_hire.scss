@@ -19,11 +19,6 @@
     .hire-butt {
       display: inline-block;
       margin-top: 10px;
-      &:hover {
-        background-color: black;
-        border-color: black
-
-      }
       a {
         text-decoration: none;
         color: $white;
@@ -33,7 +28,17 @@
         -webkit-transition: all .3s ease-in-out;
         -moz-transition: all .3s ease-in-out;
         -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out
+        transition: all .3s ease-in-out;
+        &:hover{
+          text-decoration: none;
+          color: white;
+          background-color: black;
+          border: 1px solid black;
+          transition: all .3s ease-in-out;
+          -webkit-transition: all .3s ease-in-out;
+          -moz-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+        }
       }
 
     }

@@ -13,7 +13,7 @@ return array(
 	'server' => 'localhost',
 
 	// The name of the database to select.
-	'database' => 'remcodb',
+	'database' => 'remcohoeneveld',
 
 	// The database username to connect with.
 	'user' => 'root',
