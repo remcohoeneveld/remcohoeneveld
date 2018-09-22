@@ -8,30 +8,6 @@
       }
     }
   }
-  .butt-resume {
-    a {
-      text-align: left;
-      text-decoration: none;
-      color: $white;
-      background-color: black;
-      font-size: 16px;
-      margin-top: 20px;
-      display: inline-block;
-      padding: 10px 20px;
-      border: 1px solid black;
-      -webkit-transition: all .3s ease-in-out;
-      -moz-transition: all .3s ease-in-out;
-      -o-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out;
-
-      &:hover {
-        border: 1px solid black;
-        background-color: transparent;
-        color: black
-      }
-    }
-
-  }
 
   .button-tag {
     p {
@@ -148,7 +124,7 @@
       margin: 10px 5px;
       padding: 10px 20px;
       font-family: Quicksand, sans-serif;
-      font-weight: 600;
+      font-weight: 100;
       letter-spacing: 2px;
       cursor: pointer;
       -webkit-transition: all .3s ease-in-out;
@@ -182,16 +158,24 @@
 .single-portfolio {
   position: relative;
   overflow: hidden;
-  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: .45s;
+  -moz-transition: .45s;
+  -o-transition: .45s;
+  transition: .45s;
   &:hover {
+    -webkit-transition: .45s;
+    -moz-transition: .45s;
+    -o-transition: .45s;
+    transition: .45s;
     img{
-      -webkit-transform: scale(1.12);
-      -moz-transform: scale(1.12);
-      -o-transform: scale(1.12);
-      transform: scale(1.12)
+      -webkit-transform: scale(1.1) rotate(2deg);
+      -moz-transform: scale(1.1) rotate(2deg);
+      -o-transform: scale(1.1) rotate(2deg);
+      transform: scale(1.1) rotate(2deg);
     }
     .sin-portfolio-overlay {
-      opacity: .35
+      opacity: .10
     }
     .sin-portfolio-icon {
       opacity: 1;

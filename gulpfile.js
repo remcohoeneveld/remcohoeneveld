@@ -3,7 +3,7 @@ var config = {};
 
 //basics
 config.siteName = 'remcohoeneveld';
-config.proxyDomain = 'remcohoeneveld.local';
+config.proxyDomain = 'remcohoeneveld.test';
 
 //source directory
 config.src = 'source/';

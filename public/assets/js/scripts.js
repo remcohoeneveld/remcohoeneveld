@@ -4574,22 +4574,26 @@ $(function(){ o.init(); });
 /*
 -----------------------------------------------------------------------------------*/
 
-(function($) {
+(function ($) {
 
-   /*---------------------------------------------------- */
-	/* Preloader
-	------------------------------------------------------ */
-   $(window).load(function() {
+    /*---------------------------------------------------- */
+    /* Preloader
+    ------------------------------------------------------ */
+    $(window).load(function () {
 
-      // will first fade out the loading animation
-    	$("#loader").fadeOut("slow", function(){
-        $("#wrapper").css('opacity', '1');
-        // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
+        // will first fade out the loading animation
+        $("#loader").fadeOut("slow", function () {
+            $("#wrapper").css('opacity', '1');
+            // will fade out the whole DIV that covers the website.
+            $("#preloader").delay(300).fadeOut("slow");
+        });
 
-      });
+    });
 
-  	})
+    $(".service-block ").click(function () {
+        var $this = $( this);
+            $this.toggleClass('service-block-active');
+    });
 
 
 })(jQuery);
@@ -5800,9 +5804,16 @@ $(function(){ o.init(); });
         })
     }, o.makeJQueryPlugin(), o
 });
-var sbHeight = window.innerHeight * (window.innerHeight / document.body.offsetHeight);
-
-console.log(sbHeight);
+$(window).on("scroll", function () {
+    if ($(this).scrollTop() > 800) {
+        $(".bg-dark").addClass("fixed");
+        $("#content").addClass("pushed");
+    }
+    else {
+        $(".bg-dark").removeClass("fixed");
+        $("#content").removeClass("pushed");
+    }
+});
 $('#contact-form').submit(function(ev) {
     // Prevent the form from actually submitting
     ev.preventDefault();

@@ -55,13 +55,25 @@
   margin-top: 0;
   padding: 28px 0 15px;
   margin-bottom: 0;
-  line-height: 60px
+  line-height: 60px;
+}
+#statistic .col-md-12 {
+  margin-bottom: 25px;
+}
+
+.work-statis, .rate-statis, .exp-statis {
+  h2 {
+    font-size: 25px;
+    color: black;
+  }
 }
 
 #statistic .statistic-block p {
   text-transform: uppercase;
   letter-spacing: .1em;
-  font: 400 12px/25px Quicksand, sans-serif
+  font: 400 12px/25px Quicksand, sans-serif;
+  border: solid 1px;
+  padding: 10px;
 }
 
 #statistic .rate-statis .statistic-block .coin {

@@ -116,10 +116,11 @@
                                 </div>
                             </div>
                         </div>
-
+                        {% if entry.resumeDownloadLink %}
                         <div class="butt-resume text-center">
                             <a href="{{ entry.resumeDownloadLink }}">Download Resume</a>
                         </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -179,18 +180,18 @@
 <section id="skills" class="add-padding border-bottom-color2">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="skill-title">
                     <div class="col-md-12">
-                        <h1>{{entry.title}}</h1>
+                        <h1 class="text-center">{{entry.title}}</h1>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 offset-md-3">
                         <p class="small-text-skill">{{entry.body}}</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 offset-md-3">
                 <div class="content">
                     <div class="legend">
                         <div class="skills">
@@ -239,7 +240,6 @@
                 <div class="service-block shadow text-center">
                     <span class="icon bg-df circle"><i class="fas {{ entry.fontawesome }}"></i></span>
                     <h4>{{ entry.servicesTitle }}</h4>
-                    <div class="divider clearfix"></div>
                     <p>{{ entry.servicesParagraph}}</p>
                 </div>
             </div>
@@ -248,7 +248,6 @@
                 <div class="service-block shadow text-center">
                     <span class="icon bg-df circle"><i class="fas {{ entry.fontawesome }}"></i></span>
                     <h4>{{ entry.servicesTitle }}</h4>
-                    <div class="divider clearfix"></div>
                     <p>{{ entry.servicesParagraph}}</p>
                 </div>
             </div>
