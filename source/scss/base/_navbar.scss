@@ -44,7 +44,6 @@ a {
   margin-top: 56px;
 }
 .scroll-down{
-  position: absolute;
   width: 100%;
 .fa-chevron-down {
     position: relative;
@@ -70,7 +69,7 @@ a {
   }
   @media screen and (max-width: 774px) {
     .fa-chevron-down {
-      top: 400px;
+      top: 450px;
     }
   }
 }

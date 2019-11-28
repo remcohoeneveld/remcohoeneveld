@@ -1,2 +1,2 @@
 node_modules*
-craft/config/db.php
+/craft/config/db.php

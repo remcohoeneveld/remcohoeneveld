@@ -386,31 +386,10 @@
     </div><!-- End Container -->
 </section>
 
-<!--{# Hire me section of this page #}-->
-<!--{% for entry in craft.entries.section('hireMe').find() %}-->
-<!--<section id="hire">-->
-    <!--<div class="overlay">-->
-        <!--<div class="container">-->
-            <!--<div class="row">-->
-                <!--<div class="col-md-12 text-center hire">-->
-                    <!--<div class="hire-content">-->
-                        <!--<h3>{{ entry.headText }}</h3>-->
-                        <!--<p>{{ entry.paragraphText }}</p>-->
-                    <!--</div>-->
-                    <!--<div class="hire-butt">-->
-                        <!--<a class="hire-me" href="{{ siteUrl}}#contact">{{ entry.contactText }}</a>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</section>-->
-<!--{% endfor %}-->
-
 {# Contact section of this page #}
 {% for entry in craft.entries.section('contact').find() %}
 <section id="contact">
-    <div class="container">
+    <div id="contact_form" class="container">
 
         <div class="row">
             <div class="col-md-12">
@@ -435,7 +414,7 @@
 
                     {% from _self import errorList %}
 
-                    <form class="form" method="post" id='contact-form' action="" accept-charset="UTF-8">
+                    <form class="form" method="post" id="contact-form" action="" accept-charset="UTF-8">
                         {{ getCsrfInput() }}
                         <input type="hidden" name="action" value="contactForm/sendMessage">
 
