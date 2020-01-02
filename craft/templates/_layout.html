@@ -73,10 +73,10 @@
 </head>
 <body>
 <div id="wrapper">
+  {% if craft.request.getFirstSegment() == '' %}
   <div id="header-banner">
     <div class="header section">
       <div class="main text-center">
-        {% if craft.request.getFirstSegment() == '' %}
         <h1>{{ siteName }}</h1>
         <h3>
           I'm a
@@ -85,11 +85,10 @@
                                 <span class="wrap"></span>
                             </span>
         </h3>
-
-        {% endif %}
       </div>
     </div>
   </div>
+  {% endif %}
 
 
   <nav class="navbar navbar-expand-md bg-dark">
