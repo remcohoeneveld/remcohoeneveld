@@ -4,6 +4,8 @@
   margin-top: 50px; }
   .footer .container {
     margin-bottom: 50px; }
+  .footer .contact a {
+    color: black !important; }
   .footer .social ul {
     list-style: none;
     margin: 0;
@@ -17,7 +19,7 @@
         width: 20px;
         display: inline-block;
         margin-right: 10px;
-        color: darkgray; }
+        color: #45adff; }
 
 #footer {
   padding: 40px 0;
@@ -30,6 +32,9 @@
   padding: 5px;
   height: calc(100vh - 56px);
   position: relative; }
+  @media screen and (max-width: 870px) {
+    .header {
+      height: calc(70vh - 56px); } }
   .header:before {
     content: "";
     position: absolute;
@@ -39,120 +44,136 @@
     width: 100%;
     transition: all 0.8s;
     opacity: 0.2;
-    background: url(https://images4.alphacoders.com/601/thumb-1920-601600.jpg);
+    background: url(https://wallpaperplay.com/walls/full/6/8/8/71474.jpg);
     background-size: cover;
-    transform: scale(1);
+    transform: scale(1.1);
     overflow: hidden; }
-  .header:hover:before {
-    transform: scale(1.1); }
-  .header .main h1 {
+  .header .main {
     position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    font-size: 80px;
-    z-index: 222;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #f5f5f5;
-    text-shadow: 1px 1px 1px darkgrey, 1px 2px 1px darkgrey, 1px 3px 1px darkgrey, 1px 4px 1px darkgrey, 1px 5px 1px darkgrey, 1px 6px 1px darkgrey, 1px 7px 1px darkgrey, 1px 8px 1px darkgrey, 1px 9px 1px darkgrey, 1px 10px 1px darkgrey, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); }
-  .header .main h3 {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    width: 810px;
-    background-color: #3386ff;
-    font-size: 60px;
-    z-index: 2; }
-    .header .main h3 .typewrite {
-      color: #3386ff;
-      text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-      font-weight: bold;
-      font-size: 75px;
-      text-transform: capitalize; }
-      .header .main h3 .typewrite .wrap {
-        border-right: 5px solid white; }
-  .header .main video {
-    width: 100%;
-    object-fit: fill;
-    min-height: 1000px;
-    max-height: 1000px; }
-  @media screen and (max-width: 870px) {
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0; }
     .header .main h1 {
-      font-size: 70px; }
-    .header .main h3 {
-      font-size: 40px;
-      width: 100%; }
-      .header .main h3 .typewrite {
-        font-size: 40px; }
-    .header .main .background-video {
-      opacity: 0.6; }
-    .header .main .scroll-down {
-      position: unset;
-      margin-top: 30px;
-      width: 100%; } }
-  @media screen and (max-width: 774px) {
-    .header .main h1 {
-      top: 235px;
+      transition: all 0.8s;
       width: 100%;
-      font-size: 40px; }
+      font-size: 80px;
+      z-index: 222;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #f5f5f5;
+      text-shadow: 1px 1px 1px darkgrey, 1px 2px 1px darkgrey, 1px 3px 1px darkgrey, 1px 4px 1px darkgrey, 1px 5px 1px darkgrey, 1px 6px 1px darkgrey, 1px 7px 1px darkgrey, 1px 8px 1px darkgrey, 1px 9px 1px darkgrey, 1px 10px 1px darkgrey, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); }
     .header .main h3 {
-      font-size: 30px;
-      top: 320px;
-      width: 100%; }
-      .header .main h3 .typewrite {
-        font-size: 30px; }
-    .header .main video {
-      display: none; }
-    .header .main .background-video {
-      height: 600px;
-      opacity: 0.5; }
-    .header .main .scroll-down {
-      position: unset;
-      margin-top: 30px;
-      width: 100%; } }
-  @media screen and (max-width: 593px) {
-    .header .main h1 {
-      top: 185px;
-      width: 100%;
-      font-size: 39px; }
-    .header .main h3 {
-      font-size: 25px;
-      top: 320px; }
-    .header .main video {
-      display: none; }
-    .header .main .background-video {
-      height: 600px;
-      opacity: 0.4; }
-    .header .main .scroll-down {
-      position: unset;
-      margin-top: 30px;
-      width: 100%; } }
-  .header .main .bg {
-    width: 100%;
-    background-color: transparent;
-    min-height: 0;
-    max-height: none;
-    color: black; }
-    .header .main .bg h1 {
-      text-align: center;
-      width: 100%;
-      background: #3386ff;
-      color: white;
-      padding: 60px;
-      font-size: 39px;
-      margin: 0; }
-      .header .main .bg h1 span {
-        font-weight: 200; }
-    .header .main .bg h4 {
-      background: rgba(105, 105, 105, 0.6);
+      transition: all 0.8s;
       padding: 20px;
+      width: 810px;
+      margin: 0 auto;
+      background-color: #3386ff;
+      font-size: 60px;
+      z-index: 2; }
+      .header .main h3 .typewrite {
+        color: #3386ff;
+        text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+        font-weight: bold;
+        font-size: 75px;
+        text-transform: capitalize; }
+        .header .main h3 .typewrite .wrap {
+          border-right: 5px solid white; }
+    .header .main video {
       width: 100%;
-      font-size: 39px;
-      margin: 0; }
+      object-fit: fill;
+      min-height: 1000px;
+      max-height: 1000px; }
+    @media screen and (max-width: 870px) {
+      .header .main h1 {
+        font-size: 70px; }
+      .header .main h3 {
+        font-size: 40px;
+        width: 100%; }
+        .header .main h3 .typewrite {
+          font-size: 40px; }
+      .header .main .background-video {
+        opacity: 0.6; }
+      .header .main .scroll-down {
+        position: unset;
+        margin-top: 30px;
+        width: 100%; } }
+    @media screen and (max-width: 774px) {
+      .header .main h1 {
+        top: 235px;
+        width: 100%;
+        font-size: 40px; }
+      .header .main h3 {
+        font-size: 30px;
+        top: 320px;
+        width: 100%; }
+        .header .main h3 .typewrite {
+          font-size: 30px; }
+      .header .main video {
+        display: none; }
+      .header .main .background-video {
+        height: 600px;
+        opacity: 0.5; }
+      .header .main .scroll-down {
+        position: unset;
+        margin-top: 30px;
+        width: 100%; } }
+    @media screen and (max-width: 593px) {
+      .header .main h1 {
+        top: 185px;
+        width: 100%;
+        font-size: 39px; }
+      .header .main h3 {
+        font-size: 25px;
+        top: 320px; }
+      .header .main video {
+        display: none; }
+      .header .main .background-video {
+        height: 600px;
+        opacity: 0.4; }
+      .header .main .scroll-down {
+        position: unset;
+        margin-top: 30px;
+        width: 100%; } }
+    .header .main .bg {
+      width: 100%;
+      background-color: transparent;
+      min-height: 0;
+      max-height: none;
+      color: black; }
+      .header .main .bg h1 {
+        text-align: center;
+        width: 100%;
+        background: #3386ff;
+        color: white;
+        padding: 60px;
+        font-size: 39px;
+        margin: 0; }
+        .header .main .bg h1 span {
+          font-weight: 200; }
+      .header .main .bg h4 {
+        background: rgba(105, 105, 105, 0.6);
+        padding: 20px;
+        width: 100%;
+        font-size: 39px;
+        margin: 0; }
+  .header:hover .main h1 {
+    top: 40%;
+    font-size: 100px;
+    transition: all 0.8s;
+    margin-bottom: 35px; }
+  .header:hover .main h3 {
+    transition: all 0.8s;
+    width: 100%; }
+  @media screen and (max-width: 870px) {
+    .header:hover .main h1 {
+      font-size: 40px;
+      margin-bottom: 0px; }
+    .header:hover .main h3 {
+      font-size: 30px;
+      width: 100%; } }
+  .header:hover:before {
+    transform: scale(1); }
 
 .cover {
   position: absolute;
@@ -3543,10 +3564,14 @@ a {
     margin: 50px 0;
     transition: all 0.4s ease-in-out; }
   .service-block p {
-    color: #3386ff;
+    padding: 0;
+    margin: 0;
+    color: #E5E6E4;
     clear: both;
     font-size: 0;
-    transition: all 0.4s ease-in-out; }
+    transition: all 0.4s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
 
 .service-block-active {
   border-radius: 10px;

@@ -5,6 +5,12 @@
   .container{
     margin-bottom: 50px;
   }
+  .contact {
+    a {
+      color: black !important;
+    }
+  }
+
   .social{
     ul{
       list-style: none;
@@ -21,7 +27,7 @@
             width: 20px;
             display: inline-block;
             margin-right: 10px;
-            color: darkgray;
+            color: $blue;
           }
         }
       }
