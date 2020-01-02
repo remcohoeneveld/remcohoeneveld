@@ -334,6 +334,16 @@ a{
 
 .services-box {
   margin-top: 3em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
   .col-md-3{
     display: inline-block;
   }
@@ -381,6 +391,7 @@ a{
   border-radius: 5px;
   margin-bottom: 30px;
   height: auto;
+  cursor: pointer;
   @include transition(.4s);
   .icon {
     margin-right: 10px;
@@ -397,10 +408,7 @@ a{
   p {
     color: $dark-blue;
     clear: both;
-    font-size: 15px;
-    line-height: 20px;
-    opacity: 0;
-    display: none;
+    font-size: 0;
     @include transition(.4s);
   }
 }
@@ -422,10 +430,10 @@ a{
     width: 100%;
     background: $dark-blue;
     padding: 50px;
-    opacity:1;
     clear: both;
+    font-size: 15px;
+    line-height: 20px;
     color: $light-grey;
-    display: inline-block;
     margin-bottom: 0;
     @include transition(.4s);
   }

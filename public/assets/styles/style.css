@@ -3491,7 +3491,14 @@ a {
     line-height: 39px; }
 
 .services-box {
-  margin-top: 3em; }
+  margin-top: 3em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-justify-content: center; }
   .services-box .col-md-3 {
     display: inline-block; }
   .services-box .col-md-4 {
@@ -3523,6 +3530,7 @@ a {
   border-radius: 5px;
   margin-bottom: 30px;
   height: auto;
+  cursor: pointer;
   transition: all 0.4s ease-in-out; }
   .service-block .icon {
     margin-right: 10px;
@@ -3537,10 +3545,7 @@ a {
   .service-block p {
     color: #3386ff;
     clear: both;
-    font-size: 15px;
-    line-height: 20px;
-    opacity: 0;
-    display: none;
+    font-size: 0;
     transition: all 0.4s ease-in-out; }
 
 .service-block-active {
@@ -3558,10 +3563,10 @@ a {
     width: 100%;
     background: #3386ff;
     padding: 50px;
-    opacity: 1;
     clear: both;
+    font-size: 15px;
+    line-height: 20px;
     color: #E5E6E4;
-    display: inline-block;
     margin-bottom: 0;
     transition: all 0.4s ease-in-out; }
 
