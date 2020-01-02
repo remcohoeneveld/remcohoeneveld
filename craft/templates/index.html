@@ -438,6 +438,9 @@
                             <textarea rows="10" cols="40" id="message" name="message">{% if message is defined %}{{ message.message }}{% endif %}</textarea>
                             {{ message is defined and message ? errorList(message.getErrors('message')) }}
 
+                            <h3 class="guitar"><label for="preferredGuitar">Preffered guitar</label></h3>
+                            <input class="guitar" id="preferredGuitar" name="preferredGuitar" type="text">
+
                             <div id="mail-success" class="success">
                                 Thank you. Your Mail On His Way :)
                             </div>
