@@ -2549,7 +2549,8 @@ a .nav-title {
 
 .about-content .person-img img {
   width: 100%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  padding: 25px; }
 
 .about-content .social-links {
   margin-top: 30px; }
@@ -2560,6 +2561,9 @@ a .nav-title {
   font-family: Quicksand, sans-serif;
   font-weight: 700;
   text-transform: uppercase; }
+
+.about-content .person-info .person-intro p {
+  margin: 0; }
 
 .about-content .person-info .about-skills div {
   padding: 0; }
@@ -2572,7 +2576,7 @@ a .nav-title {
   text-transform: uppercase; }
 
 .about-content .person-info .about-skills .about_info {
-  padding: 25px; }
+  padding: 0 25px; }
   .about-content .person-info .about-skills .about_info .text-info {
     color: black !important;
     font-size: 15px;

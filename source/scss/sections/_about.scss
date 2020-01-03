@@ -3,6 +3,7 @@
     img {
       width: 100%;
       border-radius: 50%;
+      padding: 25px;
     }
   }
   .social-links {
@@ -21,7 +22,7 @@
   .person-info {
     .person-intro {
       p {
-
+        margin: 0;
       }
     }
     .about-skills {
@@ -36,7 +37,7 @@
         text-transform: uppercase
       }
       .about_info {
-        padding: 25px;
+        padding: 0 25px;
         .text-info {
           color: black !important;
           font-size: 15px;
