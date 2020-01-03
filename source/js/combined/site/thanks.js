@@ -1,19 +1,19 @@
-$('#contact-form').submit(function(ev) {
-    // Prevent the form from actually submitting
-    ev.preventDefault();
+$('#contact-form').submit(function (ev) {
+  // Prevent the form from actually submitting
+  ev.preventDefault();
 
-    // Get the post data
-    var data = $(this).serialize();
+  // Get the post data
+  var data = $(this).serialize();
 
-    // Send it to the server
-    $.post('/', data, function(response) {
-        if (response.success) {
-            $('#mail-success').fadeIn();
-        } else {
+  // Send it to the server
+  $.post('/', data, function (response) {
+    if (response.success) {
+      $('#mail-success').fadeIn();
+    } else {
 
-            $('#mail-fail').fadeIn();
-            // response.error will be an object containing any validation errors that occurred, indexed by field name
-            // e.g. response.error.fromName => ['From Name is required']
-        }
-    });
+      $('#mail-fail').fadeIn();
+      // response.error will be an object containing any validation errors that occurred, indexed by field name
+      // e.g. response.error.fromName => ['From Name is required']
+    }
+  });
 });

@@ -2580,7 +2580,8 @@ a .nav-title {
   .about-content .person-info .about-skills .about_info .person-name, .about-content .person-info .about-skills .about_info .person-nationality, .about-content .person-info .about-skills .about_info .person-phone, .about-content .person-info .about-skills .about_info .person-dob, .about-content .person-info .about-skills .about_info .person-address, .about-content .person-info .about-skills .about_info .person-email {
     display: inline-block;
     width: 100%;
-    margin: 15px 0; }
+    margin: 0;
+    padding-bottom: 20px; }
     .about-content .person-info .about-skills .about_info .person-name p, .about-content .person-info .about-skills .about_info .person-nationality p, .about-content .person-info .about-skills .about_info .person-phone p, .about-content .person-info .about-skills .about_info .person-dob p, .about-content .person-info .about-skills .about_info .person-address p, .about-content .person-info .about-skills .about_info .person-email p {
       display: inline-block;
       min-width: 100px;
@@ -2673,25 +2674,23 @@ a .nav-title {
     #contact .contact-form textarea:focus {
       border-color: black;
       transition: all .4s ease-in-out; }
-  #contact form {
-    padding: 0 60px; }
-    #contact form .butt-msg {
-      margin-top: 40px; }
-      #contact form .butt-msg input {
-        text-decoration: none;
-        color: white;
-        background-color: black;
-        font-size: 25px;
-        padding: 10px 20px;
+  #contact form .butt-msg {
+    margin-top: 40px; }
+    #contact form .butt-msg input {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      font-size: 25px;
+      padding: 10px 20px;
+      border: 1px solid black;
+      transition: all .3s ease-in-out;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out; }
+      #contact form .butt-msg input:hover {
         border: 1px solid black;
-        transition: all .3s ease-in-out;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out; }
-        #contact form .butt-msg input:hover {
-          border: 1px solid black;
-          background-color: transparent;
-          color: black; }
+        background-color: transparent;
+        color: black; }
 
 .guitar, input#preferredGuitar {
   display: none !important; }

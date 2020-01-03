@@ -45,7 +45,8 @@
         .person-name, .person-nationality, .person-phone, .person-dob, .person-address, .person-email {
           display: inline-block;
           width: 100%;
-          margin: 15px 0;
+          margin: 0;
+          padding-bottom: 20px;
           p {
             display: inline-block;
             min-width: 100px;
