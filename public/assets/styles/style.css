@@ -49,10 +49,16 @@
     transform: scale(1.1);
     overflow: hidden; }
   .header .main {
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translate(0%, 30vh); }
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -moz-align-items: center;
+    align-items: center;
+    height: 100%; }
     .header .main h1 {
       transition: all 0.8s;
       width: 100%;
