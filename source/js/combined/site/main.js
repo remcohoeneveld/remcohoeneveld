@@ -6,6 +6,14 @@
 
 (function ($) {
 
+  $(document).ready(function () {
+    // Add parralax effect.
+    var moving__background = $(".header-background");
+    $(window).scroll(function () {
+      moving__background.css('top', ($(window).scrollTop()) / 2);
+    });
+  });
+
   /*---------------------------------------------------- */
   /* Preloader
   ------------------------------------------------------ */

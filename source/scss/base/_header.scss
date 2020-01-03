@@ -4,24 +4,23 @@
   padding: 5px;
   height: calc(100vh - 56px);
   position: relative;
+  overflow: hidden;
 
   @media screen and (max-width: 870px) {
     height: calc(70vh - 56px);
   }
 
-  &:before {
-    content: "";
-    position: absolute;
+  .header-background {
     top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transition: all 0.8s;
-    opacity: 0.2;
-    background: url(https://wallpaperplay.com/walls/full/6/8/8/71474.jpg);
     background-size: cover;
-    transform: scale(1.1);
+    background: url(http://remcohoeneveld.nl/uploads/header/rotterdam.png) center;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0;
+    right: 0;
     overflow: hidden;
+    opacity: 0.1;
   }
 
   .main {
@@ -44,6 +43,7 @@
     -moz-align-items: center;
     align-items: center;
     height: 100%;
+
     h1 {
       transition: all 0.8s;
       width: 100%;
