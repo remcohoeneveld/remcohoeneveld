@@ -157,23 +157,6 @@
         width: 100%;
         font-size: 39px;
         margin: 0; }
-  .header:hover .main h1 {
-    top: 40%;
-    font-size: 100px;
-    transition: all 0.8s;
-    margin-bottom: 35px; }
-  .header:hover .main h3 {
-    transition: all 0.8s;
-    width: 100%; }
-  @media screen and (max-width: 870px) {
-    .header:hover .main h1 {
-      font-size: 40px;
-      margin-bottom: 0px; }
-    .header:hover .main h3 {
-      font-size: 30px;
-      width: 100%; } }
-  .header:hover:before {
-    transform: scale(1); }
 
 .cover {
   position: absolute;

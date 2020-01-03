@@ -181,35 +181,6 @@
       }
     }
   }
-
-  &:hover {
-    .main {
-      h1 {
-        top: 40%;
-        font-size: 100px;
-        transition: all 0.8s;
-        margin-bottom: 35px;
-      }
-      h3 {
-        transition: all 0.8s;
-        width: 100%;
-      }
-      @media screen and (max-width: 870px) {
-        h1 {
-          font-size: 40px;
-          margin-bottom: 0px;
-        }
-        h3 {
-          font-size: 30px;
-          width: 100%;
-        }
-      }
-    }
-
-    &:before {
-      transform: scale(1);
-    }
-  }
 }
 
 .cover {
