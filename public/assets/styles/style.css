@@ -30,12 +30,12 @@
   color: white;
   background-image: linear-gradient(to bottom right, #45adff, black);
   padding: 5px;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 80px);
   position: relative;
   overflow: hidden; }
   @media screen and (max-width: 870px) {
     .header {
-      height: calc(70vh - 56px); } }
+      height: calc(100vh - 80px); } }
   .header .header-background {
     top: 0;
     background: url(http://remcohoeneveld.nl/uploads/header/rotterdam.png) center;
@@ -203,7 +203,8 @@
   color: white; }
 
 .bg-dark {
-  background-color: black !important; }
+  background-color: black !important;
+  padding: 20px; }
 
 .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 1.5rem;
@@ -232,7 +233,7 @@ a .nav-title {
   z-index: 10; }
 
 .pushed {
-  margin-top: 56px; }
+  margin-top: 80px; }
 
 .scroll-down {
   width: 100%; }
