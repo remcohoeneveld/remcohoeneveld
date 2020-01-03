@@ -2,6 +2,7 @@
   .person-img {
     img {
       width: 100%;
+      border-radius: 50%;
     }
   }
   .social-links {
@@ -24,7 +25,6 @@
       }
     }
     .about-skills {
-      margin-top: 50px;
       div {
         padding: 0;
       }

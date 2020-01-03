@@ -50,10 +50,9 @@
     overflow: hidden; }
   .header .main {
     position: absolute;
-    top: 30%;
     left: 0;
     right: 0;
-    bottom: 0; }
+    transform: translate(0%, 30vh); }
     .header .main h1 {
       transition: all 0.8s;
       width: 100%;
@@ -2543,7 +2542,8 @@ a .nav-title {
       text-shadow: 0 0 12px rgba(33, 33, 33, 0.6); }
 
 .about-content .person-img img {
-  width: 100%; }
+  width: 100%;
+  border-radius: 50%; }
 
 .about-content .social-links {
   margin-top: 30px; }
@@ -2555,70 +2555,71 @@ a .nav-title {
   font-weight: 700;
   text-transform: uppercase; }
 
-.about-content .person-info .about-skills {
-  margin-top: 50px; }
-  .about-content .person-info .about-skills div {
-    padding: 0; }
-  .about-content .person-info .about-skills h3 {
-    margin-top: 0;
-    position: relative;
-    font-family: Quicksand, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .about-content .person-info .about-skills .about_info {
-    padding: 25px; }
-    .about-content .person-info .about-skills .about_info .text-info {
-      color: black !important;
-      font-size: 15px;
-      line-height: 26px; }
-    .about-content .person-info .about-skills .about_info .person-name, .about-content .person-info .about-skills .about_info .person-nationality, .about-content .person-info .about-skills .about_info .person-phone, .about-content .person-info .about-skills .about_info .person-dob, .about-content .person-info .about-skills .about_info .person-address, .about-content .person-info .about-skills .about_info .person-email {
+.about-content .person-info .about-skills div {
+  padding: 0; }
+
+.about-content .person-info .about-skills h3 {
+  margin-top: 0;
+  position: relative;
+  font-family: Quicksand, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.about-content .person-info .about-skills .about_info {
+  padding: 25px; }
+  .about-content .person-info .about-skills .about_info .text-info {
+    color: black !important;
+    font-size: 15px;
+    line-height: 26px; }
+  .about-content .person-info .about-skills .about_info .person-name, .about-content .person-info .about-skills .about_info .person-nationality, .about-content .person-info .about-skills .about_info .person-phone, .about-content .person-info .about-skills .about_info .person-dob, .about-content .person-info .about-skills .about_info .person-address, .about-content .person-info .about-skills .about_info .person-email {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0; }
+    .about-content .person-info .about-skills .about_info .person-name p, .about-content .person-info .about-skills .about_info .person-nationality p, .about-content .person-info .about-skills .about_info .person-phone p, .about-content .person-info .about-skills .about_info .person-dob p, .about-content .person-info .about-skills .about_info .person-address p, .about-content .person-info .about-skills .about_info .person-email p {
       display: inline-block;
-      width: 100%;
-      margin: 15px 0; }
+      min-width: 100px;
+      color: black;
+      font-weight: 700; }
+    .about-content .person-info .about-skills .about_info .person-name span, .about-content .person-info .about-skills .about_info .person-nationality span, .about-content .person-info .about-skills .about_info .person-phone span, .about-content .person-info .about-skills .about_info .person-dob span, .about-content .person-info .about-skills .about_info .person-address span, .about-content .person-info .about-skills .about_info .person-email span {
+      display: inline-block;
+      min-width: 100px;
+      color: grey; }
+    @media (max-width: 992px) {
       .about-content .person-info .about-skills .about_info .person-name p, .about-content .person-info .about-skills .about_info .person-nationality p, .about-content .person-info .about-skills .about_info .person-phone p, .about-content .person-info .about-skills .about_info .person-dob p, .about-content .person-info .about-skills .about_info .person-address p, .about-content .person-info .about-skills .about_info .person-email p {
-        display: inline-block;
-        min-width: 100px;
+        display: table-cell;
+        min-width: 90px;
         color: black;
-        font-weight: 700; }
-      .about-content .person-info .about-skills .about_info .person-name span, .about-content .person-info .about-skills .about_info .person-nationality span, .about-content .person-info .about-skills .about_info .person-phone span, .about-content .person-info .about-skills .about_info .person-dob span, .about-content .person-info .about-skills .about_info .person-address span, .about-content .person-info .about-skills .about_info .person-email span {
+        font-weight: 700; } }
+  .about-content .person-info .about-skills .about_info ul {
+    list-style: none;
+    padding-left: 0; }
+    .about-content .person-info .about-skills .about_info ul li {
+      color: black; }
+      .about-content .person-info .about-skills .about_info ul li p {
         display: inline-block;
-        min-width: 100px;
-        color: grey; }
-      @media (max-width: 992px) {
-        .about-content .person-info .about-skills .about_info .person-name p, .about-content .person-info .about-skills .about_info .person-nationality p, .about-content .person-info .about-skills .about_info .person-phone p, .about-content .person-info .about-skills .about_info .person-dob p, .about-content .person-info .about-skills .about_info .person-address p, .about-content .person-info .about-skills .about_info .person-email p {
-          display: table-cell;
-          min-width: 90px;
-          color: black;
-          font-weight: 700; } }
-    .about-content .person-info .about-skills .about_info ul {
-      list-style: none;
-      padding-left: 0; }
-      .about-content .person-info .about-skills .about_info ul li {
-        color: black; }
-        .about-content .person-info .about-skills .about_info ul li p {
-          display: inline-block;
-          width: 80px;
-          font-size: 15px;
-          margin-right: 20px;
-          color: #000;
-          font-weight: 700; }
-        .about-content .person-info .about-skills .about_info ul li span {
-          font-size: 16px; }
-  .about-content .person-info .about-skills .butt-resume {
+        width: 80px;
+        font-size: 15px;
+        margin-right: 20px;
+        color: #000;
+        font-weight: 700; }
+      .about-content .person-info .about-skills .about_info ul li span {
+        font-size: 16px; }
+
+.about-content .person-info .about-skills .butt-resume {
+  background-color: black;
+  margin-top: 15px; }
+  .about-content .person-info .about-skills .butt-resume a {
+    text-decoration: none;
+    color: white;
     background-color: black;
-    margin-top: 15px; }
-    .about-content .person-info .about-skills .butt-resume a {
-      text-decoration: none;
-      color: white;
-      background-color: black;
-      font-size: 16px;
-      padding: 10px 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    transition: all .3s ease-in-out; }
+    .about-content .person-info .about-skills .butt-resume a:hover {
       border: 1px solid black;
-      transition: all .3s ease-in-out; }
-      .about-content .person-info .about-skills .butt-resume a:hover {
-        border: 1px solid black;
-        background-color: transparent;
-        color: black; }
+      background-color: transparent;
+      color: black; }
 
 .about-content .languages .single-lang {
   margin-bottom: 25px; }

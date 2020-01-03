@@ -38,19 +38,17 @@
             </div>
 
             <div class="row about-skills">
-
-              <div class="col-md-6 col-sm-6">
-
-                {% set image = entry.aboutImage.first() %}
-                {% if image %}
+              {% set image = entry.aboutImage.first() %}
+              {% if image %}
+              <div class="col-md-4 offset-md-4">
                 <div class="person-img">
                   <img src="{{ image.url }}"
                        alt="Ik" class="img-responsive">
                 </div>
-                {% endif %}
               </div>
+              {% endif %}
 
-              <div class="col-md-6 col-sm-6">
+              <div class="col-md-8 offset-md-2">
                 <div class="about_info">
 
                   <p class="text-info">{{ entry.textInfo }}</p>
@@ -66,13 +64,6 @@
                     <p>D.O.B.</p>
                     <span>
                                             {{entry.dateOfBirth}}
-                                            </span>
-                  </div>
-
-                  <div class="person-address">
-                    <p>Address</p>
-                    <span>
-                                            {{entry.address}}
                                             </span>
                   </div>
 
@@ -130,108 +121,6 @@
     </div>
 
   </div>
-</section>
-{% endfor %}
-
-{# Statistic section of this page #}
-{% for entry in craft.entries.section('statistic').find() %}
-<section id="statistic" class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 wow fadeInUp">
-        <div class="section-title text-center">
-          <h1>{{entry.Title}}</h1>
-        </div>
-      </div>
-      <div class="col-sm-4 wow fadeInUp" data-wow-duration=".8s"
-           data-wow-delay="200ms">
-        <div class="exp-statis">
-          <h2>Experience</h2>
-          <div class="statistic-block">
-            <h2 class="statistic-number">{{ entry.experienceInYears }}</h2>
-            <p>Years</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 wow fadeInUp" data-wow-duration=".8s"
-           data-wow-delay="400ms">
-        <div class="rate-statis">
-          <h2>Rate</h2>
-          <div class="statistic-block">
-            <span class="coin">€</span>
-            <h2 class="statistic-number">{{ entry.ratePerHour }}</h2>
-            <p>Per Hour</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 wow fadeInUp" data-wow-duration=".8s"
-           data-wow-delay="600ms">
-        <div class="work-statis">
-          <h2>Work</h2>
-          <div class="statistic-block">
-            <h2 class="statistic-number">{{ entry.projectsDone }}</h2>
-            <p>Projects Done</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endfor %}
-
-{# Skills section of this page #}
-{% for entry in craft.entries.section('skills').find() %}
-<section id="skills" class="add-padding border-bottom-color2">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="skill-title">
-          <div class="col-md-12">
-            <h1 class="text-center">{{entry.title}}</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="row content">
-        <div class="col-md-6">
-          <div class="legend">
-            <p class="small-text-skill">{{entry.body}}</p>
-            <div class="skills">
-              <ul>
-                {% for category in entry.skillcategory.order('skillpercentage
-                desc') %}
-                <li style="background: {{ category.skillcolor }}" class="jq">{{
-                  category.title}}
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div id="diagram"></div>
-        </div>
-
-        <div class="get">
-          {% for category in entry.skillcategory.order('skillpercentage desc')
-          %}
-          <div class="arc">
-            <span class="text">{{ category.title}}</span>
-            <input type="hidden" class="percent"
-                   value="{{ category.skillpercentage }}"/>
-            <input type="hidden" class="color"
-                   value="{{ category.skillcolor }}"/>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
 </section>
 {% endfor %}
 
@@ -472,4 +361,5 @@
   </div>
 </section>
 {% endfor %}
+
 {% endblock %}
