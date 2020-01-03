@@ -7,7 +7,7 @@ $red: #D0021B;
 $yellow: #F1C40E;
 $pink: #FF50F2;
 $purple: #9B59B6;
-$blue: #0D99F2;
+$primary: #0D99F2;
 $turquoise: #2CE0BD;
 $light: #CCD1D6;
 $grey: #98A3AE;
@@ -45,7 +45,7 @@ $secondarySubmitActiveColor: hsl($hue, 10%, 40%);
 $errorcolor: darken($orange, 17%);
 $warningcolor: $errorcolor;
 $successcolor: darken($green, 10%);
-$noticecolor: darken($blue, 10%);
+$noticecolor: darken($primary, 10%);
 
 $btnBorderRadius: 3px;
 $paneBorderRadius: 4px;

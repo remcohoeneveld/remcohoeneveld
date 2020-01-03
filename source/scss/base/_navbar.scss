@@ -22,14 +22,14 @@ a {
     text-decoration: none;
   }
   .nav-title {
-    color: $dark-blue;
+    color: $secondary;
     display: block;
     padding: .3rem 1rem;
     text-align: center;
     border: solid;
     &:hover {
       text-decoration: none;
-      color: $blue;
+      color: $primary;
     }
   }
 }

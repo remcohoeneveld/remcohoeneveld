@@ -1,7 +1,7 @@
 .portfolio-text {
   p{
     a{
-      color: $dark-blue;
+      color: $secondary;
       text-decoration: none;
       &:hover{
         color: $dark-grey;
@@ -58,7 +58,7 @@
   }
 
   .header-portfolio {
-    background: $dark-blue;
+    background: $secondary;
     color: white;
     &:before {
       color: white;

@@ -19,7 +19,7 @@
         width: 20px;
         display: inline-block;
         margin-right: 10px;
-        color: #45adff; }
+        color: darkorange; }
 
 #footer {
   padding: 40px 0;
@@ -28,7 +28,7 @@
 
 .header {
   color: white;
-  background-image: linear-gradient(to bottom right, #45adff, black);
+  background-image: linear-gradient(to bottom right, darkorange, black);
   padding: 5px;
   height: 100%;
   position: relative;
@@ -44,7 +44,7 @@
     left: 0;
     right: 0;
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -10; }
   .header .main {
     z-index: 10;
@@ -72,11 +72,11 @@
       padding: 20px;
       width: 810px;
       margin: 0 auto;
-      background-color: #3386ff;
+      background-color: orange;
       font-size: 60px;
       z-index: 2; }
       .header .main h3 .typewrite {
-        color: #3386ff;
+        color: orange;
         text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
         font-weight: bold;
         font-size: 75px;
@@ -148,7 +148,7 @@
       .header .main .bg h1 {
         text-align: center;
         width: 100%;
-        background: #3386ff;
+        background: orange;
         color: white;
         padding: 60px;
         font-size: 39px;
@@ -217,14 +217,14 @@ a:hover {
   text-decoration: none; }
 
 a .nav-title {
-  color: #3386ff;
+  color: orange;
   display: block;
   padding: .3rem 1rem;
   text-align: center;
   border: solid; }
   a .nav-title:hover {
     text-decoration: none;
-    color: #45adff; }
+    color: darkorange; }
 
 .fixed {
   position: fixed;
@@ -2734,7 +2734,7 @@ a .nav-title {
           -o-transition: all .3s ease-in-out; }
 
 .portfolio-text p a {
-  color: #3386ff;
+  color: orange;
   text-decoration: none; }
   .portfolio-text p a:hover {
     color: darkgrey; }
@@ -2779,7 +2779,7 @@ a .nav-title {
   font-weight: 200; }
 
 .portfolio-text .header-portfolio {
-  background: #3386ff;
+  background: orange;
   color: white; }
   .portfolio-text .header-portfolio:before {
     color: white;
@@ -3168,7 +3168,7 @@ a .nav-title {
   line-height: 26px;
   font-size: 15px;
   color: white;
-  background: #3386ff;
+  background: orange;
   border-radius: 5px;
   display: inline-block;
   padding: 5px; }
@@ -3543,8 +3543,7 @@ a {
   background-color: white; }
 
 .service-block {
-  border-radius: 5px;
-  margin-bottom: 30px;
+  border-radius: 10px;
   height: auto;
   cursor: pointer;
   transition: all 0.4s ease-in-out; }
@@ -3561,7 +3560,7 @@ a {
   .service-block p {
     padding: 0;
     margin: 0;
-    color: #E5E6E4;
+    color: white;
     clear: both;
     font-size: 0;
     transition: all 0.4s ease-in-out;
@@ -3574,19 +3573,19 @@ a {
   transition: all 0.4s ease-in-out; }
   .service-block-active .icon {
     padding-bottom: 15px;
-    color: #3386ff;
+    color: orange;
     transition: all 0.4s ease-in-out; }
   .service-block-active h4 {
-    color: #3386ff;
+    color: orange;
     transition: all 0.4s ease-in-out; }
   .service-block-active p {
     width: 100%;
-    background: #3386ff;
+    background: orange;
     padding: 50px;
     clear: both;
     font-size: 15px;
     line-height: 20px;
-    color: #E5E6E4;
+    color: white;
     margin-bottom: 0;
     transition: all 0.4s ease-in-out; }
 
@@ -3717,7 +3716,7 @@ a {
   border-top: 11px solid rgba(255, 255, 255, 0.2);
   border-right: 11px solid rgba(255, 255, 255, 0.2);
   border-bottom: 11px solid rgba(255, 255, 255, 0.2);
-  border-left: 11px solid #3386ff;
+  border-left: 11px solid orange;
   animation: load 1.1s infinite linear;
   display: block;
   border-radius: 50%;

@@ -1,6 +1,6 @@
 .header {
   color: white;
-  background-image: linear-gradient(to bottom right, $blue, black);
+  background-image: linear-gradient(to bottom right, $primary, black);
   padding: 5px;
   height: 100%;
   position: relative;
@@ -17,7 +17,7 @@
     left: 0;
     right: 0;
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -10;
   }
 
@@ -67,12 +67,12 @@
       padding: 20px;
       width: 810px;
       margin: 0 auto;
-      background-color: $dark-blue;
+      background-color: $secondary;
       font-size: 60px;
       z-index: 2;
 
       .typewrite {
-        color: $dark-blue;
+        color: $secondary;
         text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
         font-weight: bold;
         font-size: 75px;
@@ -174,7 +174,7 @@
       h1 {
         text-align: center;
         width: 100%;
-        background: $dark-blue;
+        background: $secondary;
         color: $white;
         padding: 60px;
         font-size: 39px;
