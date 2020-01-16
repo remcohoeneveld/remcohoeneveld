@@ -36,7 +36,7 @@
   z-index: 0; }
   .header .header-background {
     top: 0;
-    background: url(http://remcohoeneveld.nl/uploads/header/rotterdam.png) center;
+    background: url(/uploads/header/rotterdam.png) center;
     background-size: cover;
     width: inherit;
     height: inherit;
