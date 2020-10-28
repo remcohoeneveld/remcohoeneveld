@@ -1,0 +1,21 @@
+fieldLayouts:
+  b8e5f883-a185-4838-b3b8-2dcf4c9ef331:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: f47b2acf-65ee-4b69-badd-8334183f2777
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Content
+        sortOrder: 1
+handle: homepage
+hasTitleField: true
+name: Homepage
+section: aaad6803-6301-4af1-8b15-684ffe8b8ec1
+sortOrder: 1
+titleFormat: null

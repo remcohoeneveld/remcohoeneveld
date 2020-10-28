@@ -1,0 +1,66 @@
+contentColumnType: string
+fieldGroup: f098d4c0-0a03-4ef2-9e7a-98fe3c20a006
+handle: buttonEffect
+instructions: ''
+name: buttonEffect
+searchable: true
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - default
+          - '1'
+        -
+          - label
+          - 'aeneas effect '
+        -
+          - value
+          - aeneas
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - 'jaques effect '
+        -
+          - value
+          - jaques
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - 'egeon effect'
+        -
+          - value
+          - egeon
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - 'claudio effect'
+        -
+          - value
+          - claudio
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - 'laertes effect'
+        -
+          - value
+          - laertes
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -1,0 +1,358 @@
+{#
+# Homepage template
+# ---------------
+#
+# When this template gets loaded, it will be because someone has accessed
+# http://yoursite.com/ (without any URI). Craft checks to see if you have
+# a Single section set to be the Homepage (as you do, by default), and
+# loads the section’s Template (this file). A special ‘entry’ variable
+# will already be set for you, assigned to the Homepage entry.
+#
+# It's worth noting that even if you didn't have a Homepage Single section,
+# as long as this template remains at craft/templates/index.html, it
+# would still be the one to get loaded when accessing http://yoursite.com/,
+# albeit without an ‘entry’ variable already set for you.
+#
+# See this page for more details on how Craft routes requests:
+# http://craftcms.com/docs/routing
+#}
+
+{% extends "_layout" %}
+
+{% block content %}
+
+{# About me section of this page #}
+{% for entry in craft.entries.section('about').all() %}
+<section id="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="person-info">
+            <div class="section-title text-center">
+              <h1>About me</h1>
+            </div>
+
+            <div class="person-intro">
+              <p class="text-center">{{ entry.personIntro }}</p>
+            </div>
+
+            <div class="row about-skills">
+              {% set image = entry.aboutImage.first() %}
+              {% if image %}
+              <div class="col-md-4 offset-md-4">
+                <div class="person-img">
+                  <img src="{{ image.url }}"
+                       alt="Ik" class="img-responsive">
+                </div>
+              </div>
+              {% endif %}
+
+              <div class="col-md-8 offset-md-2">
+                <div class="about_info">
+
+                  <p class="text-info">{{ entry.textInfo }}</p>
+
+                  <div class="person-name">
+                    <p>Full Name</p>
+                    <span>
+                                            {{entry.fullName}}
+                                            </span>
+                  </div>
+
+                  <div class="person-dob">
+                    <p>D.O.B.</p>
+                    <span>
+                                            {{entry.dateOfBirth}}
+                                            </span>
+                  </div>
+
+                  <div class="person-email">
+                    <p>E-Mail</p>
+                    <span>
+                                            {{entry.eMail}}
+                                            </span>
+                  </div>
+
+                  <div class="person-nationality">
+                    <p>Nationality</p>
+                    <span>
+                                                {{entry.nationality}}
+                                                </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="social-btns">
+                <div class="buttons effect {{entry.buttonEffect}}">
+                  <a href="{{ entry.facebook }}" class="fb"
+                     title="Join us on Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                  </a>
+                  <a href="{{ entry.twitter }}" class="tw"
+                     title="Join us on Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="{{ entry.linkedin }}" class="in"
+                     title="Join us on Linked In">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {% if entry.resumeDownloadLink %}
+            <div class="butt-resume text-center">
+              <a href="{{ entry.resumeDownloadLink }}">Download Resume</a>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endfor %}
+
+{# Services section of this page #}
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInDown" data-wow-duration=".8s">
+        <div class="section-title text-center">
+          <h1>Services</h1>
+        </div>
+      </div>
+      {% for entry in craft.entries.section('services').all() %}
+      <div class="col-md-4 wow fadeInUp" data-wow-duration=".8s"
+           data-wow-delay="300ms">
+        <div class="service-block shadow text-center">
+          <span class="icon bg-df circle"><i
+            class="fas {{ entry.fontawesome }}"></i></span>
+          <h4>{{ entry.servicesTitle }}</h4>
+          <p>{{ entry.servicesParagraph}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Portfolio section of this page #}
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center">
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class=" col-sm-12 portfolio-menu text-center">
+        <ul class="type-of-work">
+          <li class="active cool-link" data-filter="*">All</li>
+          <li class="cool-link" data-filter=".Webdevelopment">Web Development
+          </li>
+          <li class="cool-link" data-filter=".Animation">Animation</li>
+          <li class="cool-link" data-filter=".Sounddesign">Sound Design</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row grid">
+
+      {% for entry in craft.entries.section('portfolio').all() %}
+      {% for category in entry.portfolioType %}
+      <div class="col-md-4 col-sm-6 col-xs-12 grid-item {{ category.title }}">
+        {% endfor %}
+        <div class="single-portfolio">
+
+          {% set image = entry.portfolioImage.first() %}
+          {% if image %}
+          <a href="{{ entry.url }}">
+            <img src="{{ image.getUrl() }}"
+                 alt="{{ image.getUrl() }}">
+            <div class="sin-portfolio-overlay"></div>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Resume section of this page #}
+<section id="resume">
+  <div class="container">
+
+    <!-- Start Section Title -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center">
+          <h1>Resume</h1>
+        </div>
+      </div>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="row content-centered">
+      <div class="col-md-12">
+        <!-- Start Timeline Centered -->
+        <ul class="timeline timeline-centered">
+          <!-- Start Experience Title -->
+          <li class="timeline-item period">
+            <div class="timeline-info"></div>
+            <div class="timeline-marker exp-title"></div>
+            <div class="timeline-content">
+              <h2 class="timeline-title">Experience</h2>
+            </div>
+          </li>
+          <!-- End Experience Title -->
+
+          {% for entry in craft.entries.section('resumeExperience').all() %}
+          <li class="timeline-item">
+            <div class="timeline-info wow {{ entry.datePosition.value }}"
+                 data-wow-duration=".8s"
+                 data-wow-delay="200ms">
+              <span>{{ entry.dateInText }}</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content wow {{ entry.textPosition.value }}"
+                 data-wow-duration=".8s"
+                 data-wow-delay="200ms">
+              <h3 class="timeline-title">{{ entry.timelineTitle }}</h3>
+              <p>{{entry.timelineParagraph}}</p>
+            </div>
+          </li>
+
+          {% endfor %}
+
+
+          <!-- Start Education Title -->
+          <li class="timeline-item period">
+            <div class="timeline-info"></div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h2 class="timeline-title">Education</h2>
+            </div>
+          </li>
+          <!-- End Education Title -->
+
+
+          {% for entry in craft.entries.section('resumeEducation').all() %}
+          {% for option in entry.timelineReset %}
+          <li class="timeline-item {{option}}">
+            {% endfor %}
+            {% if not entry.timelineReset|length %}
+          <li class="timeline-item">
+            {% endif %}
+            <div class="timeline-info wow {{ entry.datePosition.value }}"
+                 data-wow-duration=".8s"
+                 data-wow-delay="200ms">
+              <span>{{ entry.dateInText }}</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content wow {{ entry.textPosition.value }}"
+                 data-wow-duration=".8s"
+                 data-wow-delay="200ms">
+              <h3 class="timeline-title">{{ entry.timelineTitle }}</h3>
+              <p>{{entry.timelineParagraph}}</p>
+            </div>
+          </li>
+          {% endfor %}
+
+        </ul>
+        <!-- End Timeline Centered -->
+      </div><!-- col-xs-10 -->
+    </div><!-- content-centered -->
+
+  </div><!-- End Container -->
+</section>
+
+{# Contact section of this page #}
+{% for entry in craft.entries.section('contact').all() %}
+<section id="contact">
+  <div id="contact_form" class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center">
+          <h1>{{ entry.title }}</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="contact-content">
+          {% macro errorList(errors) %}
+          {% if errors %}
+          <ul class="errors">
+            {% for error in errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% endmacro %}
+
+          {% from _self import errorList %}
+
+          <form class="form" method="post" id="contact-form" action=""
+                accept-charset="UTF-8">
+            {{ getCsrfInput() }}
+            <input type="hidden" name="action" value="contactForm/sendMessage">
+
+            <div class="contact-form">
+              <h3><label for="fromName">Your Name</label></h3>
+              <input id="fromName" type="text" name="fromName"
+                     value="{% if message is defined %}{{ message.fromName }}{% endif %}">
+              {{ message is defined and message ?
+              errorList(message.getErrors('fromName')) }}
+
+              <h3><label for="fromEmail">Your Email</label></h3>
+              <input id="fromEmail" type="email" name="fromEmail"
+                     value="{% if message is defined %}{{ message.fromEmail }}{% endif %}">
+              {{ message is defined and message ?
+              errorList(message.getErrors('fromEmail')) }}
+
+              <h3><label for="subject">Subject</label></h3>
+              <input id="subject" type="text" name="subject"
+                     value="{% if message is defined %}{{ message.subject }}{% endif %}">
+              {{ message is defined and message ?
+              errorList(message.getErrors('subject')) }}
+
+              <h3><label for="message">Message</label></h3>
+              <textarea rows="10" cols="40" id="message" name="message">{% if message is defined %}{{ message.message }}{% endif %}</textarea>
+              {{ message is defined and message ?
+              errorList(message.getErrors('message')) }}
+
+              <h3 class="guitar"><label for="preferredGuitar">Preffered
+                guitar</label></h3>
+              <input class="guitar" id="preferredGuitar" name="preferredGuitar"
+                     type="text">
+
+              <div id="mail-success" class="success">
+                Thank you. Your Mail On His Way :)
+              </div>
+              <div id="mail-fail" class="error">
+                Sorry, an error occurred. Try later :(
+              </div>
+            </div>
+            <div class="butt-msg text-center">
+              <input type="submit" value="Send message">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+{% endblock %}

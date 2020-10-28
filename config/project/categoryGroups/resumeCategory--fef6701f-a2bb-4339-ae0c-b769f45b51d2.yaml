@@ -1,0 +1,10 @@
+handle: resumeCategory
+name: 'resume category'
+siteSettings:
+  4ec3f9c2-9247-4880-a799-c6ac984a10e4:
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 2e9c4d19-4f72-43e1-88f0-af658f6a8654

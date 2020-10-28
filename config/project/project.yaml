@@ -1,0 +1,43 @@
+dateModified: 1603875150
+email:
+  fromEmail: remcohoeneveld@gmail.com
+  fromName: remcohoeneveld
+  template: null
+  transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+plugins:
+  contact-form:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: '1'
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from remcohoeneveld.nl'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: remcohoeneveld@gmail.com
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.1.1
+  seomatic:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 3.0.9
+    settings: null
+system:
+  edition: solo
+  live: true
+  name: 'Remco Hoeneveld'
+  retryDuration: null
+  schemaVersion: 3.5.13
+  timeZone: Europe/Amsterdam
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

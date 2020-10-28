@@ -1,0 +1,41 @@
+fieldLayouts:
+  a42d8cb1-b2f8-4175-a9b7-191120475dd3:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titel
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 50bb90d1-ec7b-4d5b-b0fc-62db2e3a73d1
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 452cde4e-f74a-4f9e-ab3a-c9670ff2bc1b
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: dc67c014-7891-4764-8abd-6c99ba773786
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+        name: services
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: c0fcf090-c8b5-4e2c-a2a0-b48f2a85d3c9
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: b7f46fb5-1463-48e1-bb1b-87334ec629b7
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+        name: wow
+        sortOrder: 2
+handle: services
+hasTitleField: true
+name: services
+section: b2a01483-94a8-4d75-8695-947497f68121
+sortOrder: 1
+titleFormat: null

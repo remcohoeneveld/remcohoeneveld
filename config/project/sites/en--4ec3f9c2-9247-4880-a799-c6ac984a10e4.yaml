@@ -1,0 +1,9 @@
+baseUrl: 'http://craft.remcohoeneveld.test'
+enabled: true
+handle: en
+hasUrls: true
+language: en-001
+name: 'Remco Hoeneveld'
+primary: true
+siteGroup: 1720b014-0529-4751-8508-1db37971f91a
+sortOrder: 1

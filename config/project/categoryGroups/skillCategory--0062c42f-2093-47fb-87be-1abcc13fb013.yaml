@@ -1,0 +1,26 @@
+fieldLayouts:
+  ddc33dae-34c6-4caf-ab93-e3057b08cefb:
+    tabs:
+      -
+        fields:
+          45c43247-b682-4598-99d5-f94a1783f243:
+            required: false
+            sortOrder: 2
+          472a645c-3b99-49fb-ac4c-2f089d0bacb2:
+            required: false
+            sortOrder: 1
+          9b0540b8-8089-474d-8215-efb90befd92f:
+            required: false
+            sortOrder: 3
+        name: skills
+        sortOrder: 1
+handle: skillCategory
+name: 'skill category'
+siteSettings:
+  4ec3f9c2-9247-4880-a799-c6ac984a10e4:
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 2fac0fbc-0c64-414c-b424-f1031135f616

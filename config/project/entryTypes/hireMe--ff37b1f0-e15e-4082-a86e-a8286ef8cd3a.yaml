@@ -1,0 +1,29 @@
+fieldLayouts:
+  ed35d75e-41cd-45d2-bcee-f8c6c29796d7:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: null
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 48290fa9-95b1-4242-9b92-494f627bce5d
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: bd9aca12-68aa-4f05-bf7e-00aa98882d96
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 5749c6cf-5f95-4198-bfea-b02d41be1bde
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: hireMe
+        sortOrder: 1
+handle: hireMe
+hasTitleField: false
+name: 'hire me'
+section: 5b9e7a52-94e2-4e0f-b98a-7a180f3280f1
+sortOrder: 1
+titleFormat: '{section.name|raw}'

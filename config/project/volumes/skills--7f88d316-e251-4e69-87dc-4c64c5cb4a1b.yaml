@@ -1,0 +1,9 @@
+handle: skills
+hasUrls: true
+name: skills
+settings:
+  path: uploads/skills/
+  url: uploads/skills/
+sortOrder: 3
+type: craft\volumes\Local
+url: null

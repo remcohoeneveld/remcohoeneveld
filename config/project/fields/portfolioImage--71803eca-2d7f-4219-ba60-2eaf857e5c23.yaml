@@ -1,0 +1,24 @@
+contentColumnType: string
+fieldGroup: ccdac757-e101-4f6a-8196-9d6a8fde9b97
+handle: portfolioImage
+instructions: ''
+name: 'portfolio image'
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:d32bf636-1311-41c0-b6fd-ee50a0e4cbd5'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: 'Voeg een afbeelding toe aan je portfolio item'
+  singleUploadLocationSource: 'volume:2a49fc40-27c1-4256-a5f1-3c707ed0b634'
+  singleUploadLocationSubpath: ''
+  sources:
+    - 'volume:d32bf636-1311-41c0-b6fd-ee50a0e4cbd5'
+  useSingleFolder: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

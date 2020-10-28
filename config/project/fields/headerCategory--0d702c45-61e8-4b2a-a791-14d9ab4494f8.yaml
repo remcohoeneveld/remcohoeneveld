@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: dbc1df87-a696-4802-b785-584e99fb3fd0
+handle: headerCategory
+instructions: ''
+name: 'header category'
+searchable: true
+settings:
+  branchLimit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  source: 'group:a7e6355b-f785-4229-9738-c7db57feda52'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

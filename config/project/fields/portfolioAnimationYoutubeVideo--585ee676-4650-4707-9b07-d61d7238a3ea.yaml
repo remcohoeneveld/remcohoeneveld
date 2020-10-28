@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: ccdac757-e101-4f6a-8196-9d6a8fde9b97
+handle: portfolioAnimationYoutubeVideo
+instructions: ''
+name: 'portfolio animation youtube video'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

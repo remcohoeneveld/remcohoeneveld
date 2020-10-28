@@ -1,0 +1,9 @@
+handle: portfolio
+hasUrls: true
+name: portfolio
+settings:
+  path: uploads/portfolio/
+  url: /uploads/portfolio/
+sortOrder: 2
+type: craft\volumes\Local
+url: null

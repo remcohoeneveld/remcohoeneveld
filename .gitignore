@@ -1,2 +1,4 @@
 node_modules*
 /craft/config/db.php
+/vendor*
+.env

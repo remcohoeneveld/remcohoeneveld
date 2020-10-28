@@ -1,0 +1,66 @@
+contentColumnType: string
+fieldGroup: 049d474b-27c2-4d3a-b2f4-2acedee3f6f6
+handle: wowDelay
+instructions: ''
+name: 'wow delay'
+searchable: true
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - default
+          - '1'
+        -
+          - label
+          - 200ms
+        -
+          - value
+          - 200ms
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - 400ms
+        -
+          - value
+          - 400ms
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - 600ms
+        -
+          - value
+          - 600ms
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - 800ms
+        -
+          - value
+          - 800ms
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - 1000ms
+        -
+          - value
+          - 1000ms
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

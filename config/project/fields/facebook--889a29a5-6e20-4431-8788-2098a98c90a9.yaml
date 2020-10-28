@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: bd6d3999-697f-434e-83de-ab20cfc1e791
+handle: facebook
+instructions: ''
+name: facebook
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,33 @@
+contentColumnType: string
+fieldGroup: afb6f9db-0786-4a4d-88ff-b8cfd08bd22d
+handle: datePosition
+instructions: ''
+name: 'date position'
+searchable: true
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - 'right date'
+        -
+          - value
+          - fadeInRight
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - 'left date'
+        -
+          - value
+          - fadeInLeft
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

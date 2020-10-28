@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: d6394e72-4d16-4bc4-b66f-32ea917e0f1a
+handle: paragraphText
+instructions: ''
+name: 'Paragraph Text'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

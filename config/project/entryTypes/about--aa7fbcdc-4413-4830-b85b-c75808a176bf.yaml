@@ -1,0 +1,85 @@
+fieldLayouts:
+  4ea7c4aa-b477-4bb8-879a-694db36b70b4:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Naam
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 85b228af-a9bb-4d95-a642-65c35d581e88
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ac10fb02-9588-409e-bac3-c48eeb1a3dc4
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 29bfec8e-f908-403e-982b-d68ba216a225
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 3e7197bd-76c7-43d7-b640-1cdae566edd5
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 6c53a1d8-47d1-4b00-a2dd-74d06c3944b0
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 10bdbaf7-68d3-4716-847b-1ec80ab247c4
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4dd27498-762c-42c3-8f0d-3be307b6c6e1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ec7153c8-bdaf-469c-b10b-0b05ebfa47b8
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: c13b5c30-f982-4066-a4a8-d8fae5f4ba53
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Personal information'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 889a29a5-6e20-4431-8788-2098a98c90a9
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 77bb9885-1e15-4053-9b7e-459ede807a13
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: b612426c-d4e6-4c76-9f81-c991ae4eb96b
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8989705b-94fe-44c2-bd8e-b50a710a2faa
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 93277e1a-8dd2-4542-aafb-dfdda5adc407
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Social
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 32bc8d9f-7d30-4024-b8f9-8f159592a986
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Extra
+        sortOrder: 3
+handle: about
+hasTitleField: true
+name: about
+section: b823905a-9327-4b0a-bbe4-1f5fdcd8fc3a
+sortOrder: 1
+titleFormat: null

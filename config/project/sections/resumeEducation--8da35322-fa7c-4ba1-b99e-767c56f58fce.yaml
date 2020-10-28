@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: resumeEducation
+name: 'resume education'
+propagationMethod: all
+siteSettings:
+  4ec3f9c2-9247-4880-a799-c6ac984a10e4:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

@@ -1,0 +1,7 @@
+handle: footer
+hasTitleField: false
+name: footer
+section: b4238d52-4e5d-48e0-bb1f-a12f796053fc
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleLabel: null

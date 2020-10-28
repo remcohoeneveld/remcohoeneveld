@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: 42a4cd4c-92f1-411a-83e3-fc45a946948d
+handle: servicesTitle
+instructions: ''
+name: 'services title'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

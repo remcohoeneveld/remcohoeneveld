@@ -1,0 +1,24 @@
+contentColumnType: string
+fieldGroup: e8a13612-83d9-4f49-8e90-48db3f2abf46
+handle: skillImage
+instructions: ''
+name: 'skill image'
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:2a49fc40-27c1-4256-a5f1-3c707ed0b634'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: ''
+  singleUploadLocationSource: 'volume:2a49fc40-27c1-4256-a5f1-3c707ed0b634'
+  singleUploadLocationSubpath: ''
+  sources:
+    - 'volume:7f88d316-e251-4e69-87dc-4c64c5cb4a1b'
+  useSingleFolder: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

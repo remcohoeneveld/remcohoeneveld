@@ -1,0 +1,29 @@
+fieldLayouts:
+  5a05d481-3dfa-468c-9ffd-b2f45f636c59:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: null
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 637af963-233f-45bf-aa6f-a48cca8dda5a
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 163d9a61-597a-4286-afb6-b4eb7bd98979
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 35596709-e9d0-4ec7-9a17-13c0152265dd
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: statistic
+        sortOrder: 1
+handle: statistic
+hasTitleField: false
+name: ' statistic'
+section: 158ccb2c-ea9d-4601-93a7-b62489acf80d
+sortOrder: 1
+titleFormat: '{section.name|raw}'

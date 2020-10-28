@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: ccdac757-e101-4f6a-8196-9d6a8fde9b97
+handle: portfolioType
+instructions: ''
+name: 'portfolio type'
+searchable: true
+settings:
+  branchLimit: '1'
+  localizeRelations: false
+  selectionLabel: 'voeg een portfolio type toe'
+  source: 'group:3fe6dcfb-3ff7-40ef-8d85-33b4851e5fed'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

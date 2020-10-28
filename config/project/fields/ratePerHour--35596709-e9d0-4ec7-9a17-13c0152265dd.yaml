@@ -1,0 +1,13 @@
+contentColumnType: integer(10)
+fieldGroup: c860769b-3053-4a93-b1a7-e7c98525d938
+handle: ratePerHour
+instructions: ''
+name: 'rate per hour'
+searchable: true
+settings:
+  decimals: '0'
+  max: ''
+  min: '0'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

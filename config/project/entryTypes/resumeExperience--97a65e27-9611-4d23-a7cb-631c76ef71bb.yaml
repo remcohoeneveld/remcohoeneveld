@@ -1,0 +1,57 @@
+fieldLayouts:
+  5f1d7a91-481d-4f84-ae1e-fd12b08100e0:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titel
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: f0fa3efb-9e2d-44f3-9552-d6ead33a90f7
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 9de4fccb-b6f2-4754-a3fe-e7a863fa7fe6
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f362dcd7-7fe5-4765-9269-285c28a4944b
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f8eed578-754f-4911-8d30-f2cf8fc7f1d4
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 5efd3b76-0e69-4cc9-aab6-648e2d3f7458
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: efedb090-c7fa-41b1-9130-7d5f9a463ff3
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8a71e378-2479-432b-a17b-08dbb451f75b
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: resume
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: c0fcf090-c8b5-4e2c-a2a0-b48f2a85d3c9
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: b7f46fb5-1463-48e1-bb1b-87334ec629b7
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+        name: wow
+        sortOrder: 2
+handle: resumeExperience
+hasTitleField: true
+name: 'resume experience'
+section: 93da354d-5ad3-41b6-bf2a-2a2d529a4022
+sortOrder: 1
+titleFormat: null

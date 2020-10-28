@@ -1,0 +1,45 @@
+fieldLayouts:
+  0c33f7dc-87de-4344-8c35-a864d9fe1f5c:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titel
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 45231181-478f-4e94-bd9f-c3ff79dde47a
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 964b1007-17b2-44dc-a868-785c1d0dabb9
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 71803eca-2d7f-4219-ba60-2eaf857e5c23
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 1175d233-a543-4eb6-8e7d-fdf55a51e2f6
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 72f83977-b924-4d93-8bb0-249151b2d371
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 585ee676-4650-4707-9b07-d61d7238a3ea
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8cf84258-43a1-4cca-8191-6eb0b41013db
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Portfolio item'
+        sortOrder: 1
+handle: portfolio
+hasTitleField: true
+name: portfolio
+section: 5c36035f-6874-4570-a95a-ce1d770fe0b4
+sortOrder: 1
+titleFormat: null

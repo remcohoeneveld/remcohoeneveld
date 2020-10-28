@@ -1,0 +1,12 @@
+contentColumnType: string
+fieldGroup: bd6d3999-697f-434e-83de-ab20cfc1e791
+handle: body
+instructions: null
+name: Body
+searchable: true
+settings:
+  columnType: text
+  configFile: Standard.json
+translationKeyFormat: null
+translationMethod: site
+type: craft\redactor\Field

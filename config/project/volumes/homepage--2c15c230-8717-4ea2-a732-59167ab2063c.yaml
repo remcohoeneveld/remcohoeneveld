@@ -1,0 +1,9 @@
+handle: homepage
+hasUrls: true
+name: Homepage
+settings:
+  path: uploads/home/
+  url: /uploads/home/
+sortOrder: 4
+type: craft\volumes\Local
+url: null

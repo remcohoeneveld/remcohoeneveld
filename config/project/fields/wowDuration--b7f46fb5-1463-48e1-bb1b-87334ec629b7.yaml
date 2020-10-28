@@ -1,0 +1,55 @@
+contentColumnType: string
+fieldGroup: 049d474b-27c2-4d3a-b2f4-2acedee3f6f6
+handle: wowDuration
+instructions: ''
+name: 'wow duration'
+searchable: true
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - '2 seconden'
+        -
+          - value
+          - .2s
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - '4 seconden'
+        -
+          - value
+          - .4s
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - '6 seconden'
+        -
+          - value
+          - .6s
+    -
+      __assoc__:
+        -
+          - default
+          - '1'
+        -
+          - label
+          - '8 seconden'
+        -
+          - value
+          - .8s
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

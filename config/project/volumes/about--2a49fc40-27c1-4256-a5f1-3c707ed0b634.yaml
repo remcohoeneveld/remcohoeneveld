@@ -1,0 +1,9 @@
+handle: about
+hasUrls: true
+name: About
+settings:
+  path: uploads/about/
+  url: /uploads/about/
+sortOrder: 1
+type: craft\volumes\Local
+url: null

@@ -1,0 +1,24 @@
+contentColumnType: string
+fieldGroup: 06d4e779-88b2-46ea-96a5-f0c89658cb13
+handle: favicon
+instructions: ''
+name: favicon
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:2c15c230-8717-4ea2-a732-59167ab2063c'
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: ''
+  singleUploadLocationSource: 'volume:2a49fc40-27c1-4256-a5f1-3c707ed0b634'
+  singleUploadLocationSubpath: ''
+  sources:
+    - 'volume:2c15c230-8717-4ea2-a732-59167ab2063c'
+  useSingleFolder: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: dbc1df87-a696-4802-b785-584e99fb3fd0
+handle: youtubeBackgroundVideo
+instructions: ''
+name: 'youtube background video'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

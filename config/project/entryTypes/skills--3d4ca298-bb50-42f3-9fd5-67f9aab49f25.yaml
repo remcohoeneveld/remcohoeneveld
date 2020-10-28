@@ -1,0 +1,29 @@
+fieldLayouts:
+  f070c0b2-7c08-4c61-989a-47bfa703da18:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 71b1e22f-8353-489d-a567-4205ee530a90
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 1175d233-a543-4eb6-8e7d-fdf55a51e2f6
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 16b18211-f419-4f23-a143-fde119d10cbe
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: skills
+        sortOrder: 1
+handle: skills
+hasTitleField: true
+name: skills
+section: dc5fdc2b-68fe-49cb-94d9-41cb51268857
+sortOrder: 1
+titleFormat: null
